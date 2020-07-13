@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Restaurant/static/css/main.84e83c0f.chunk.css",
+    "main.js": "/Restaurant/static/js/main.22dfdfca.chunk.js",
+    "main.js.map": "/Restaurant/static/js/main.22dfdfca.chunk.js.map",
+    "runtime-main.js": "/Restaurant/static/js/runtime-main.a6b95d91.js",
+    "runtime-main.js.map": "/Restaurant/static/js/runtime-main.a6b95d91.js.map",
+    "static/js/2.00ed9345.chunk.js": "/Restaurant/static/js/2.00ed9345.chunk.js",
+    "static/js/2.00ed9345.chunk.js.map": "/Restaurant/static/js/2.00ed9345.chunk.js.map",
+    "index.html": "/Restaurant/index.html",
+    "precache-manifest.1e160b585e97a814f87a1e3b624b1992.js": "/Restaurant/precache-manifest.1e160b585e97a814f87a1e3b624b1992.js",
+    "service-worker.js": "/Restaurant/service-worker.js",
+    "static/css/main.84e83c0f.chunk.css.map": "/Restaurant/static/css/main.84e83c0f.chunk.css.map",
+    "static/js/2.00ed9345.chunk.js.LICENSE.txt": "/Restaurant/static/js/2.00ed9345.chunk.js.LICENSE.txt",
+    "static/media/drink-brown.png": "/Restaurant/static/media/drink-brown.b31d3ded.png",
+    "static/media/food-brown.png": "/Restaurant/static/media/food-brown.a62eb151.png",
+    "static/media/kitchen-brown.png": "/Restaurant/static/media/kitchen-brown.4a2a98b1.png",
+    "static/media/fivePage.scss": "/Restaurant/static/media/reviewPhoto.b4664a02.jpg",
+    "static/media/FirstPage.scss": "/Restaurant/static/media/threee.4c9e2dc9.jpg",
+    "static/media/vinyl-brown.png": "/Restaurant/static/media/vinyl-brown.22e150cb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6b95d91.js",
+    "static/js/2.00ed9345.chunk.js",
+    "static/css/main.84e83c0f.chunk.css",
+    "static/js/main.22dfdfca.chunk.js"
+  ]
+}
