@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6657275a5d2702af78269c03ec7d240d",
+    "revision": "4844c69c590b4f9ddbb328290ea86c5c",
     "url": "/Restaurant/index.html"
   },
   {
-    "revision": "8b06e69facda169bc5ce",
-    "url": "/Restaurant/static/css/main.12759cbd.chunk.css"
+    "revision": "315184078f122a46201c",
+    "url": "/Restaurant/static/css/main.cf66e8ff.chunk.css"
   },
   {
     "revision": "a702ee4c5430776e44f0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Restaurant/static/js/2.6fb826ec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8b06e69facda169bc5ce",
-    "url": "/Restaurant/static/js/main.e1aacab4.chunk.js"
+    "revision": "315184078f122a46201c",
+    "url": "/Restaurant/static/js/main.f5578fc7.chunk.js"
   },
   {
     "revision": "dee19eed088dced54172",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b31d3dedf3f093d067bbb97d0be621f3",
     "url": "/Restaurant/static/media/drink-brown.b31d3ded.png"
+  },
+  {
+    "revision": "9cd00e45cb055fc9a4256bc2b3b158c4",
+    "url": "/Restaurant/static/media/firstPagePhotoOfficial.9cd00e45.svg"
   },
   {
     "revision": "838271e2adb6c431ece8a50ecea7ff61",
@@ -44,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Restaurant/static/media/one.705a2da7.jpg"
   },
   {
-    "revision": "3913daba03918dbb597292498416901f",
-    "url": "/Restaurant/static/media/reviewPhotoSvg.3913daba.svg"
+    "revision": "b4ad3d07f2980385f9ed1a006e01a5d1",
+    "url": "/Restaurant/static/media/reviewPhotoSvgOfficial.b4ad3d07.svg"
   },
   {
     "revision": "bad301db534df22ade839b7157d86693",
