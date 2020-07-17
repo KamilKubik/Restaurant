@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4844c69c590b4f9ddbb328290ea86c5c",
+    "revision": "c7820a65030dbb7ee4060a5628b20fc5",
     "url": "/Restaurant/index.html"
   },
   {
-    "revision": "315184078f122a46201c",
-    "url": "/Restaurant/static/css/main.cf66e8ff.chunk.css"
+    "revision": "e5f522fbaa5f2ef5a0cc",
+    "url": "/Restaurant/static/css/main.89d228e1.chunk.css"
   },
   {
-    "revision": "a702ee4c5430776e44f0",
-    "url": "/Restaurant/static/js/2.6fb826ec.chunk.js"
+    "revision": "b8444b13720a738f4bad",
+    "url": "/Restaurant/static/js/2.e48339f5.chunk.js"
   },
   {
     "revision": "a25b5045b43cea69265ae58acdb590d6",
-    "url": "/Restaurant/static/js/2.6fb826ec.chunk.js.LICENSE.txt"
+    "url": "/Restaurant/static/js/2.e48339f5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "315184078f122a46201c",
-    "url": "/Restaurant/static/js/main.f5578fc7.chunk.js"
+    "revision": "e5f522fbaa5f2ef5a0cc",
+    "url": "/Restaurant/static/js/main.eefca5c3.chunk.js"
   },
   {
     "revision": "dee19eed088dced54172",
     "url": "/Restaurant/static/js/runtime-main.a6b95d91.js"
+  },
+  {
+    "revision": "18dd45bf6ce82adaee9f386c911972a2",
+    "url": "/Restaurant/static/media/arrowLeftSvg.18dd45bf.svg"
+  },
+  {
+    "revision": "0a2d982f9aafab415d005d129c08cf2d",
+    "url": "/Restaurant/static/media/arrowRightSvg.0a2d982f.svg"
+  },
+  {
+    "revision": "b2a9274fe56dafac83f930549f4ab451",
+    "url": "/Restaurant/static/media/coctailSvgOff.b2a9274f.svg"
   },
   {
     "revision": "b31d3dedf3f093d067bbb97d0be621f3",
@@ -44,20 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Restaurant/static/media/kitchen-brown.4a2a98b1.png"
   },
   {
-    "revision": "705a2da70a32edd1ddc549fcef393be3",
-    "url": "/Restaurant/static/media/one.705a2da7.jpg"
+    "revision": "eb769fffe1b5e39478490bb00f32f054",
+    "url": "/Restaurant/static/media/mainCourseSvgOff.eb769fff.svg"
   },
   {
     "revision": "b4ad3d07f2980385f9ed1a006e01a5d1",
     "url": "/Restaurant/static/media/reviewPhotoSvgOfficial.b4ad3d07.svg"
   },
   {
-    "revision": "bad301db534df22ade839b7157d86693",
-    "url": "/Restaurant/static/media/three.bad301db.jpg"
-  },
-  {
-    "revision": "51aec7af8c202f13cf57ddedf97feca7",
-    "url": "/Restaurant/static/media/two.51aec7af.jpg"
+    "revision": "f664b66854bbd773ce6d7f8099647467",
+    "url": "/Restaurant/static/media/starterPhotoSvgOff.f664b668.svg"
   },
   {
     "revision": "22e150cb487f6cfa8167277a7cc13b97",
