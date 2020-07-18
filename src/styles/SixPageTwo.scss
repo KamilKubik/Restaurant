@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sixPageTwo {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+
+    position: absolute;
+    top: 0;
+
+    .menuArrowDown {
+        .arrowDownFive {
+            height: 0px !important;
+        }
+    }
+}
+
+$main-color: #69510F;
+
+//                                                                   1200px
+
+@media (min-width: 1200px) {
+    .sixPageTwo {
+        position: unset;
+        top: unset;
+        height: 100vh;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        background-color: black;
+
+        .menuTitleContainer {
+            position: relative;
+            height: 10vh;
+            width: 100%;
+
+            .menuWrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                .menuSubtitle {
+                    color: $main-color;
+                    text-align: center;
+                    font-family: 'Rokkitt', serif;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+        
+                .menuTitle {
+                    color: whitesmoke;
+                    text-align: center;
+                    font-family: 'Rokkitt', serif;
+                    font-weight: 400;
+                    font-size: 2rem;
+                }
+            }
+
+        }
+
+        .menuContainer {
+            height: 70vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            font-family: 'Rokkitt', serif;
+            font-weight: 400;
+
+            .menuGrid {
+                position: relative;
+                padding-left: 10%;
+                padding-right: 10%;
+
+                .dishContainer {
+                    transform: translateY(50%);
+
+
+                    .dishName {
+                        color: $main-color;
+                        font-size: 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 400;
+                    }
+        
+                    .dishName::after {
+                        content: '';
+                        border-top: 1px solid $main-color;
+                        margin-left: 5%;
+                        width: 35%;
+                    }
+        
+                    .menuIngredients {
+                        font-family: 'Rokkitt', serif;
+                        color: whitesmoke;
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                    }
+        
+                    .dishPrice {
+                        color: $main-color;
+                        font-size: 1.1rem;
+                        font-family: 'Rokkitt', serif;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .viewAllContainer {
+            position: relative;
+            height: 10vh;
+            width: 100%;
+
+            .viewAllButton {
+                position: absolute;
+                height: 50px;
+                width: 180px;
+                background-color: black;
+                border: 1px solid $main-color;
+                color: whitesmoke;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                font-size: 1.2rem;
+            }
+        }
+
+        .menuArrowDown {
+            position: relative;
+            height: 10vh;
+            width: 100%;
+
+            .arrowDownFive {
+                height: 42px !important;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//                                                                   1600px
+
+@media (min-width: 1600px) {
+    .sixPageTwo {
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 1.4rem !important;
+                }
+                .menuTitle {
+                    font-size: 2.2rem !important;
+                }
+            }
+        }
+
+        .menuContainer {
+            .menuGrid {
+                .dishContainer {
+                    .dishName {
+                        font-size: 1.4rem !important;
+                    }
+        
+                    .menuIngredients {
+                        font-size: 1rem !important;
+                    }
+        
+                    .dishPrice {
+                        font-size: 1.3rem !important;
+                    }
+                }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 60px !important;
+                width: 200px !important;
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 52px !important;
+            }
+        }
+    }
+}
+
+//                                                                   2600px
+
+@media (min-width: 2600px) {
+    .sixPageTwo {
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 2rem !important;
+                }
+                .menuTitle {
+                    font-size: 2.8rem !important;
+                }
+            }
+        }
+
+        .menuContainer {
+            .menuGrid {
+                .dishContainer {
+                    .dishName {
+                        font-size: 2rem !important;
+                    }
+        
+                    .menuIngredients {
+                        font-size: 1.6rem !important;
+                    }
+        
+                    .dishPrice {
+                        font-size: 1.8rem !important;
+                    }
+
+                    .dishName::after {
+                        border-top: 2px solid $main-color !important;
+                    }
+                }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 80px !important;
+                width: 280px !important;
+                font-size: 1.6rem !important;
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 62px !important;
+            }
+        }
+    }
+}
+
+//                                                                   3200px
+
+@media (min-width: 3200px) {
+    .sixPageTwo {
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 2.6rem !important;
+                }
+                .menuTitle {
+                    font-size: 3.4rem !important;
+                }
+            }
+        }
+
+        .menuContainer {
+            .menuGrid {
+                .dishContainer {
+                    .dishName {
+                        font-size: 2.4rem !important;
+                    }
+        
+                    .menuIngredients {
+                        font-size: 1.8rem !important;
+                    }
+        
+                    .dishPrice {
+                        font-size: 2.2rem !important;
+                    }
+
+                    .dishName::after {
+                        border-top: 2px solid $main-color !important;
+                    }
+                }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 90px !important;
+                width: 320px !important;
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 72px !important;
+            }
+        }
+    }
+}
+
+//                                                                   3800px
+
+@media (min-width: 3800px) {
+    .sixPageTwo {
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 3.4rem !important;
+                }
+                .menuTitle {
+                    font-size: 4.6rem !important;
+                }
+            }
+        }
+
+        .menuContainer {
+            .menuGrid {
+                .dishContainer {
+                    .dishName {
+                        font-size: 3.4rem !important;
+                    }
+        
+                    .menuIngredients {
+                        font-size: 2.6rem !important;
+                    }
+        
+                    .dishPrice {
+                        font-size: 3.2rem !important;
+                    }
+
+                    .dishName::after {
+                        border-top: 2px solid $main-color !important;
+                    }
+                }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 120px !important;
+                width: 400px !important;
+                font-size: 2.4rem !important;
+                border: 3px solid $main-color !important;
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 82px !important;
+            }
+        }
+    }
+}
+
+// orientation: landscape
+
+@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+    .sixPageTwo {
+        width: 0 !important;
+        position: absolute !important;
+
+        .menuContainer {
+            position: absolute !important;
+            top: 0 !important;
+        }
+    }
+}

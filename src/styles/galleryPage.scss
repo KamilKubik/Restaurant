@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #69510F;
+
+.galleryPage {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    
+    .titleContainer {
+        position: relative;
+        height: 15%;
+        width: 100%;
+
+        .arrowBackContainer {
+            position: absolute;
+            height: 100%;
+            width: 20%;
+
+            .arrowBack {
+                height: 22px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .centerContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h2 {
+                color: $main-color;
+                text-align: center;
+                font-size: 0.6rem;
+            }
+    
+            h1 {
+                color: whitesmoke;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .galleryContainer {
+        height: 75%;
+        width: 100%;
+
+        //                                                                              FIRST CONTAINER
+
+        .containerOne {
+            position: relative;
+            height: 12.5vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 17% 17% 17% 34%;
+            grid-template-rows: 1fr;
+            padding-left: 5%;
+            padding-right: 5%;
+            grid-gap: 5%;
+
+            .photoOneContainer {
+                position: relative;
+                
+                .photoOne {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery1.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .photoTwoContainer {
+                position: relative;
+
+                .photoTwo {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery2.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .photoThreeContainer {
+                position: relative;
+
+                .photoThree {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery3.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .photoFourContainer {
+                position: relative;
+
+                .photoFour {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery4.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        //                                                                          SECOND CONTAINER
+
+        .containerTwo {
+            position: relative;
+            margin-top: 5%;
+            height: 12.5vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 17% 34% 17% 17%;
+            grid-template-rows: 1fr;
+            padding-left: 5%;
+            padding-right: 5%;
+            grid-gap: 5%;
+
+            .photoFiveContainer {
+                position: relative;
+                
+                .photoFive {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery5.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .photoSixContainer {
+                position: relative;
+
+                .photoSix {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery6.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .photoSevenContainer {
+                position: relative;
+
+                .photoSeven {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery7.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .photoEightContainer {
+                position: relative;
+
+                .photoEight {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery8.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        //                                                                          THIRD CONTAINER
+
+        .containerThree {
+            position: relative;
+            margin-top: 5%;
+            height: 12.5vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 17% 34% 17% 17%;
+            grid-template-rows: 1fr;
+            padding-left: 5%;
+            padding-right: 5%;
+            grid-gap: 5%;
+        
+            .photoNineContainer {
+                position: relative;
+                        
+                .photoNine {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery9.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        
+            .photoTenContainer {
+                position: relative;
+        
+                .photoTen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery10.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        
+            .photoElevenContainer {
+                position: relative;
+        
+                .photoEleven {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery11.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        
+            .photoTwelveContainer {
+                position: relative;
+        
+                .photoTwelve {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery12.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+    
+        //                                                                          FOURTH CONTAINER
+
+        .containerFour {
+            position: relative;
+            margin-top: 5%;
+            height: 12.5vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 17% 34% 17% 17%;
+            grid-template-rows: 1fr;
+            padding-left: 5%;
+            padding-right: 5%;
+            grid-gap: 5%;
+                
+            .photoThirteenContainer {
+                position: relative;
+                                
+                .photoThirteen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery13.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+                
+            .photoFourteenContainer {
+                position: relative;
+                
+                .photoFourteen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery14.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+                
+            .photoFifteenContainer {
+                position: relative;
+                
+                .photoFifteen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery15.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+                
+            .photoSixteenContainer {
+                position: relative;
+                
+                .photoSixteen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery16.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        //                                                                          FIFTH CONTAINER
+
+        .containerFive {
+            position: relative;
+            margin-top: 5%;
+            height: 12.5vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 34% 17% 17% 17%;
+            grid-template-rows: 1fr;
+            padding-left: 5%;
+            padding-right: 5%;
+            grid-gap: 5%;
+                
+            .photoSeventeenContainer {
+                position: relative;
+                                
+                .photoSeventeen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery18.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+                
+            .photoEighteenContainer {
+                position: relative;
+                
+                .photoEighteen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery17.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+                
+            .photoNineteenContainer {
+                position: relative;
+                
+                .photoNineteen {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery19.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+                
+            .photoTwentyContainer {
+                position: relative;
+                
+                .photoTwenty {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../svg/gallery/gallery20.svg);
+                    background-size: cover;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .arrowDownBox {
+            position: relative;
+            height: 10%;
+            width: 100%;
+
+            .arrowDownGallery {
+                height: 22px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }

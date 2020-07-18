@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from './components/Container';
+import GalleryPage from './components/galleryPage/GalleryPage';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import './styles/FirstPage.scss';
+import './styles/secondPage.scss';
+import './styles/thirdPage.scss';
+import './styles/fourthPage.scss';
+import './styles/fivePage.scss';
+import './styles/sixPage.scss';
+import './styles/SixPageTwo.scss';
+import './styles/seventhPage.scss';
+import './styles/ContactPage.scss';
+
+import './styles/galleryPage.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Container}></Route>
+        <Route path='/gallery' component={GalleryPage}></Route>
+      </Switch>
+    </Router>
   );
 }
 

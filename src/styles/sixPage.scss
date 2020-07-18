@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #69510F;
+
+.sixPage {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    .menuTitleContainer {
+        position: relative;
+        height: 10vh;
+        width: 100%;
+
+        .menuWrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .menuSubtitle {
+                color: $main-color;
+                text-align: center;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+                font-size: 0.9rem;
+            }
+    
+            .menuTitle {
+                color: whitesmoke;
+                text-align: center;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+    .menuContainer {
+        height: 80vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        font-family: 'Rokkitt', serif;
+        font-weight: 400;
+
+        .menuGrid {
+            position: relative;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .dishContainer {
+                transform: translateY(50%);
+
+
+                .dishName {
+                    color: $main-color;
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                }
+    
+                .dishName::after {
+                    content: '';
+                    border-top: 1px solid $main-color;
+                    margin-left: 5%;
+                    width: 35%;
+                }
+    
+                .menuIngredients {
+                    font-family: 'Rokkitt', serif;
+                    color: whitesmoke;
+                    font-size: 0.6rem;
+                    font-weight: 400;
+                }
+    
+                .dishPrice {
+                    color: $main-color;
+                    font-size: 0.8rem;
+                    font-family: 'Rokkitt', serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .menuArrowDown {
+        position: relative;
+        height: 10vh;
+        width: 100%;
+
+        .arrowDownFive {
+            height: 26px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+    }
+}
+
+//                                               400px
+
+@media (min-width: 400px) and (orientation: portrait) {
+    .sixPage {
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 1rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 1.4rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 1.1rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.8rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 32px;
+            }
+        }
+    }
+}
+
+//                                                                700px
+
+@media (min-width: 700px) and (orientation: portrait) {
+    .sixPage {
+        position: relative;
+        .rightBar {
+            position: absolute;
+            top: 0;
+            right: 15%;
+            height: 100%;
+            width: 1px;
+            background-color: $main-color;
+        }
+
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 1.2rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 1.6rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 1.2rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.9rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 1.1rem !important;
+                }
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 36px !important;
+            }
+        }
+    }
+}
+
+//                                                                900px
+
+@media (min-width: 900px) {
+    .sixPage {
+        position: relative;
+        .rightBar {
+            position: absolute;
+            top: 0;
+            right: 15%;
+            height: 100%;
+            width: 1px;
+            background-color: $main-color;
+        }
+
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 1.2rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 1.6rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 1.2rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.9rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 1.1rem !important;
+                }
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 36px !important;
+            }
+        }
+    }
+}
+
+
+//                                                                1200px
+
+@media (min-width: 1200px) {
+    .sixPage {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        
+        .rightBar {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 1.4rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 2rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 1.2rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.9rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 1.1rem !important;
+                }
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 36px !important;
+            }
+        }
+    }
+}
+
+// orientation: landscape
+
+@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+    .sixPage {
+        position: relative;
+        .rightBar {
+            position: absolute;
+            top: 0;
+            right: 15%;
+            height: 100%;
+            width: 1px;
+            background-color: $main-color;
+        }
+
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 0.6rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 0.6rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.4rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 0.6rem !important;
+                }
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 22px !important;
+            }
+        }
+    }
+}
+
+// orientation: landscape 1000px
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+    .sixPage {
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 1rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 1.4rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 1rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.6rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 0.8rem !important;
+                }
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 26px !important;
+            }
+        }
+    }
+}

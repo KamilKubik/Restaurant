@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secondPage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    .secondPageText {
+        width: 80%;
+        color: white;
+        font-size: 0.8rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        
+
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+    }
+
+    .arrowDownTwo {
+        height: 26px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}
+
+//                                                                400px
+
+@media (min-width: 400px) and (orientation: portrait) {
+    .secondPage {
+        .secondPageText {
+            width: 90%;
+            font-size: 1rem;
+        }
+
+        .arrowDownTwo {
+            height: 32px;
+        }
+    }
+}
+
+//                                                                700px
+
+@media (min-width: 700px) and (orientation: portrait) {
+    .secondPage {
+        .secondPageText {
+            width: 70%;
+            font-size: 1.2rem;
+        }
+
+        .arrowDownTwo {
+            height: 36px;
+        }
+    }
+}
+
+//                                                                900px
+
+@media (min-width: 900px) {
+    .secondPage {
+        .secondPageText {
+            width: 70%;
+            font-size: 1.2rem;
+        }
+
+        .arrowDownTwo {
+            height: 36px !important;
+        }
+    }
+}
+
+//                                                               1200px
+
+@media (min-width: 1200px) {
+    .secondPage {
+        .secondPageText {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .secondPageTextTwo {
+            width: 80%;
+            color: white;
+            font-size: 1.4rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            
+    
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+        }
+
+        .arrowDownTwo {
+            height: 42px !important;
+        }
+    }
+}
+
+//                                                               1600px
+
+@media (min-width: 1200px) {
+    .secondPage {
+        .secondPageTextTwo {
+            font-size: 1.6rem;
+        }
+
+        .arrowDownTwo {
+            height: 52px !important;
+        }
+    }
+}
+
+//                                                               1900px
+
+@media (min-width: 1900px) {
+    .secondPage {
+        .secondPageTextTwo {
+            font-size: 1.8rem;
+        }
+
+        .arrowDownTwo {
+            height: 56px !important;
+        }
+    }
+}
+
+//                                                               2600px
+
+@media (min-width: 2600px) {
+    .secondPage {
+        .secondPageTextTwo {
+            font-size: 2.2rem;
+        }
+
+        .arrowDownTwo {
+            height: 62px !important;
+        }
+    }
+}
+
+//                                                               3200px
+
+@media (min-width: 3200px) {
+    .secondPage {
+        .secondPageTextTwo {
+            font-size: 2.6rem;
+        }
+
+        .arrowDownTwo {
+            height: 72px !important;
+        }
+    }
+}
+
+//                                                               3800px
+
+@media (min-width: 3800px) {
+    .secondPage {
+        .secondPageTextTwo {
+            font-size: 3.4rem;
+        }
+
+        .arrowDownTwo {
+            height: 82px !important;
+        }
+    }
+}
+
+// orientation: landscape
+
+@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+    .secondPage {
+        .secondPageTextTwo {
+            height: 0;
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .secondPageText {
+            width: 65%;
+            font-size: 0.7rem;
+        }
+
+        .arrowDownTwo {
+            height: 22px;
+        }
+    }
+}
+
+// orientation: landscape 1000px
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+    .secondPage {
+        .secondPageText {
+            font-size: 1rem;
+        }
+
+        .arrowDownTwo {
+            height: 26px;
+        }
+    }
+}

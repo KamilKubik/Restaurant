@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #69510F;
+
+.seventhPage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    .galleryTitle {
+        position: relative;
+        height: 12.5%;
+        // width: 100%;
+
+        .galleryWrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+            .gallerySubtitle {
+                color: $main-color;
+                font-size: 0.9rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+                text-align: center;
+            }
+    
+            .galleryTitle {
+                color: whitesmoke;
+                display: flex;
+                font-size: 1.2rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+    }
+
+    .galleryContainer {
+        height: 75vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .starterContainer {
+            position: relative;
+            min-height: 100%;
+            width: 100%;
+    
+            .starter {
+                height: 70%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+            .starterTitle {
+                color: $main-color;
+                font-size: 0.8rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+    
+                position: absolute;
+                bottom: -5%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    
+        .mainCourseContainer {
+            position: relative;
+            min-height: 100%;
+            width: 100%;
+    
+            .mainCourse {
+                height: 60%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+            .mainCourseTitle {
+                color: $main-color;
+                font-size: 0.8rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+    
+                position: absolute;
+                bottom: 0%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    
+        .coctailContainer {
+            position: relative;
+            min-height: 100%;
+            width: 100%;
+    
+            .coctail {
+                height: 80%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+            .coctailTitle {
+                color: $main-color;
+                font-size: 0.8rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+    
+                position: absolute;
+                bottom: -10%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 36px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .arrowDownGallery {
+        height: 12.5%;
+        width: 100%;
+    }
+
+    .arrowDownSix {
+        height: 26px;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}
+
+//                                            400px
+
+@media (min-width: 400px) and (orientation: portrait) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 1rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 1.4rem !important;
+        }
+    }
+
+    .starterContainer {
+        .starterTitle {
+            font-size: 1.1rem !important;
+        }
+    }
+
+    .mainCourseContainer {
+        .mainCourseTitle {
+            font-size: 1.1rem !important;
+        }
+    }
+
+    .coctailContainer {
+        .coctailTitle {
+            font-size: 1.1rem !important;
+        }
+    }
+
+    .arrowDownSix {
+        height: 32px !important;
+    }
+}
+
+//                                                         700px
+
+@media (min-width: 700px) and (orientation: portrait) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 1.2rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 1.6rem !important;
+        }
+    }
+
+    .starterContainer {
+        .starterTitle {
+            font-size: 1.2rem !important;
+        }
+
+        
+        .starter {
+            height: 65% !important;
+        }
+    }
+
+    .mainCourseContainer {
+        .mainCourseTitle {
+            font-size: 1.2rem !important;
+        }
+
+        .mainCourse {
+            height: 60% !important;
+        }
+    }
+
+    .coctailContainer {
+        .coctailTitle {
+            font-size: 1.2rem !important;
+        }
+
+        
+        .coctail {
+            height: 90% !important;
+        }
+    }
+
+    .arrowRightGallery {
+        height: 52px !important;
+    }
+
+    .arrowDownSix {
+        height: 36px !important;
+    }
+}
+
+//                                                         900px
+
+@media (min-width: 900px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 1.2rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 1.6rem !important;
+        }
+    }
+
+    .starterContainer {
+        .starterTitle {
+            bottom: -10% !important;
+            font-size: 1.2rem !important;
+        }
+
+        .starter {
+            height: 75% !important;
+        }
+    }
+
+    .mainCourseContainer {
+        .mainCourseTitle {
+            bottom: -5% !important;
+            font-size: 1.2rem !important;
+        }
+
+        .mainCourse {
+            height: 65% !important;
+        }
+    }
+
+    .coctailContainer {
+        .coctailTitle {
+            bottom: -15% !important;
+            font-size: 1.2rem !important;
+        }
+
+        .coctail {
+            height: 85% !important;
+        }
+    }
+
+    .arrowRightGallery {
+        height: 52px !important;
+    }
+
+    .arrowDownSix {
+        height: 36px !important;
+    }
+}
+
+//                                                         1200px
+
+@media (min-width: 1200px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 1.2rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 2rem !important;
+        }
+    }
+
+    .galleryContainer {
+        height: 75vh !important;
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-rows: 1fr !important;
+        overflow: hidden !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+
+        .starterContainer {
+            height: 100% !important;
+
+            .starterTitle {
+                font-size: 1.5rem !important;
+                top: 50% !important;
+                bottom: unset !important;
+                transform: translate(75%, -50%) rotate(90deg) !important;
+            }
+    
+            
+            .starter {
+                height: 250px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            height: 100% !important;
+
+            .mainCourseTitle {
+                font-size: 1.5rem !important;
+                left: 52.5% !important;
+                top: 50% !important;
+                bottom: unset !important;
+                transform: translate(50%, -50%) rotate(90deg) !important;
+            }
+    
+            .mainCourse {
+                height: 225px !important;
+            }
+        }
+    
+        .coctailContainer {
+            height: 100% !important;
+
+            .coctailTitle {
+                font-size: 1.5rem !important;
+                top: 50% !important;
+                bottom: unset !important;
+                transform: translate(0, -50%) rotate(90deg) !important;
+            }
+    
+            
+            .coctail {
+                height: 250px !important;
+            }
+        }
+    }
+
+    .barThree {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: $main-color;
+        top: 80%;
+    }
+
+    .barFour {
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: $main-color;
+        left: 10%;
+    }
+
+    .arrowRightGallery {
+        height: 52px !important;
+    }
+
+    .arrowDownSix {
+        height: 42px !important;
+    }
+}
+
+//                                                         1600px
+
+@media (min-width: 1600px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 1.4rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 2.2rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 1.6rem !important;
+            }
+    
+            .starter {
+                height: 275px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 1.6rem !important;
+            }
+    
+            .mainCourse {
+                height: 250px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 1.6rem !important;
+            }
+    
+            .coctail {
+                height: 275px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 64px !important;
+    }
+
+    .arrowDownSix {
+        height: 52px !important;
+    }
+}
+
+//                                                         2600px
+
+@media (min-width: 2600px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 2rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 2.8rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 2.4rem !important;
+            }
+    
+            .starter {
+                height: 400px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 2.4rem !important;
+            }
+    
+            .mainCourse {
+                height: 375px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 2.4rem !important;
+            }
+    
+            .coctail {
+                height: 400px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 82px !important;
+    }
+
+    .arrowDownSix {
+        height: 62px !important;
+    }
+}
+
+//                                                         3200px
+
+@media (min-width: 3200px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 2.6rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 3.4rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 2.8rem !important;
+            }
+    
+            .starter {
+                height: 475px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 2.8rem !important;
+            }
+    
+            .mainCourse {
+                height: 450px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 2.8rem !important;
+            }
+    
+            .coctail {
+                height: 475px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 92px !important;
+    }
+
+    .arrowDownSix {
+        height: 72px !important;
+    }
+}
+
+//                                                         3800px
+
+@media (min-width: 3800px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 3.4rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 4.6rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 3.4rem !important;
+            }
+    
+            .starter {
+                height: 550px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 3.4rem !important;
+            }
+    
+            .mainCourse {
+                height: 525px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 3.4rem !important;
+            }
+    
+            .coctail {
+                height: 550px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 112px !important;
+    }
+
+    .arrowDownSix {
+        height: 82px !important;
+    }
+}
+
+// orientation: landscape
+
+@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 0.6rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 1rem !important;
+        }
+    }
+
+    .galleryContainer {
+        height: 75vh !important;
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-rows: 1fr !important;
+        overflow: hidden !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+
+        .starterContainer {
+            .starterTitle {
+                font-size: 0.6rem !important;
+                bottom: 25% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%)!important;
+            }
+    
+            .starter {
+                height: 100px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 0.6rem !important;
+                bottom: 25% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+            }
+    
+            .mainCourse {
+                height: 90px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 0.6rem !important;
+                bottom: 25% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+            }
+    
+            .coctail {
+                height: 100px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 26px !important;
+    }
+
+    .arrowDownSix {
+        height: 22px !important;
+    }
+}
+
+// orientation: landscape 1000px
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 1rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 1.4rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 0.8rem !important;
+                bottom: 20% !important;
+            }
+
+            .starter {
+                height: 150px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 0.8rem !important;
+                bottom: 20% !important;
+            }
+
+            .mainCourse {
+                height: 140px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 0.8rem !important;
+                bottom: 20% !important;
+            }
+
+            .coctail {
+                height: 150px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 32px !important;
+    }
+
+    .arrowDownSix {
+        height: 26px !important;
+    }
+}

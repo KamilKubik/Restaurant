@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #69510F;
+
+.contactPage {
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+
+    .contactBox {
+        position: relative;
+        height: 70%;
+
+        .contactTitle {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 0.4rem;
+            font-family: 'Rokkitt', serif;
+            font-weight: 400;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .mediaBox {
+        position: relative;
+        height: 30%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+
+        .facebookBox {
+            position: relative;
+
+            .facebook {
+                color: whitesmoke;
+                font-size: 0.6rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+    
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+            .facebook::before {
+                content: '';
+                position: absolute;
+                width: 35%;
+                height: 1px;
+                background-color: $main-color;
+                bottom: 0;
+                left: 15%;
+            }
+        }
+
+        .instagramBox {
+            position: relative;
+
+            .instagram {
+                color: whitesmoke;
+                font-size: 0.6rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+            .instagram::before {
+                content: '';
+                position: absolute;
+                width: 35%;
+                height: 1px;
+                background-color: $main-color;
+                top: 0;
+                left: 15%;
+            }
+        }
+
+        .tripAdvisorBox {
+            position: relative;
+
+            .tripAdvisor {
+                color: whitesmoke;
+                font-size: 0.6rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+    
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+            .tripAdvisor::before {
+                content: '';
+                position: absolute;
+                width: 35%;
+                height: 1px;
+                background-color: $main-color;
+                bottom: 0;
+                left: 10%;
+            }
+        }
+    }
+}
+
+//                                                           400px
+
+@media (min-width: 400px) and (orientation: portrait) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 0.5rem !important;
+            }
+        }
+
+        
+        .facebookBox {
+            .facebook {
+                font-size: 0.6rem !important;
+            }
+
+            .facebook::before {
+                width: 30% !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 0.6rem !important;
+            }
+
+            .instagram::before {
+                width: 30% !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 0.6rem !important;
+            }
+
+            .tripAdvisor::before {
+                width: 30% !important;
+            }
+        }
+    }
+}
+
+//                                                           900px
+
+@media (min-width: 900px) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 0.6rem !important;
+            }
+        }
+
+        
+        .facebookBox {
+            .facebook {
+                font-size: 0.8rem !important;
+            }
+
+            .facebook::before {
+                width: 15% !important;
+                left: 35% !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 0.8rem !important;
+            }
+
+            .instagram::before {
+                width: 15% !important;
+                left: 35% !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 0.8rem !important;
+            }
+
+            .tripAdvisor::before {
+                width: 15% !important;
+                left: 35% !important;
+            }
+        }
+    }
+}
+
+//                                                           1600px
+
+@media (min-width: 1600px) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 1.1rem !important;
+            }
+        }
+
+        
+        .facebookBox {
+            .facebook {
+                font-size: 1.4rem !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 1.4rem !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 1.4rem !important;
+            }
+        }
+    }
+}
+
+//                                                           1600px
+
+@media (min-width: 1600px) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 1.4rem !important;
+            }
+        }
+
+        .facebookBox {
+            .facebook {
+                font-size: 2rem !important;
+            }
+
+            .facebook::before {
+                height: 2px !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 2rem !important;
+            }
+
+            .instagram::before {
+                height: 2px !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 2rem !important;
+            }
+
+            
+            .tripAdvisor::before {
+                height: 2px !important;
+            }
+        }
+    }
+}
+
+//                                                           3200px
+
+@media (min-width: 3200px) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .facebookBox {
+            .facebook {
+                font-size: 2.4rem !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 2.4rem !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 2.4rem !important;
+            }
+        }
+    }
+}
+
+//                                                           3800px
+
+@media (min-width: 3800px) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 2.2rem !important;
+            }
+        }
+
+        .facebookBox {
+            .facebook {
+                font-size: 2.6rem !important;
+            }
+
+            .facebook::before {
+                height: 3px !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 2.6rem !important;
+            }
+
+            .instagram::before {
+                height: 3px !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 2.6rem !important;
+            }
+
+            .tripAdvisor::before {
+                height: 3px !important;
+            }
+        }
+    }
+}
+
+// orientation: landscape
+
+@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 0.4rem !important;
+            }
+        }
+
+        .facebookBox {
+            .facebook {
+                font-size: 0.6rem !important;
+            }
+
+            .facebook::before {
+                width: 15% !important;
+                left: 35% !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 0.6rem !important;
+            }
+
+            .instagram::before {
+                width: 15% !important;
+                left: 35% !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 0.6rem !important;
+            }
+
+            .tripAdvisor::before {
+                width: 15% !important;
+                left: 35% !important;
+            }
+        }
+    }
+}
+
+// orientation: landscape 1000px
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+    .contactPage {
+        .contactBox {
+            .contactTitle {
+                font-size: 0.6rem !important;
+            }
+        }
+
+        .facebookBox {
+            .facebook {
+                font-size: 0.7rem !important;
+            }
+
+            .facebook::before {
+                width: 10% !important;
+                left: 40% !important;
+            }
+        }
+
+        .instagramBox {
+            .instagram {
+                font-size: 0.7rem !important;
+            }
+
+            .instagram::before {
+                width: 10% !important;
+                left: 40% !important;
+            }
+        }
+
+        .tripAdvisorBox {
+            .tripAdvisor {
+                font-size: 0.7rem !important;
+            }
+
+            .tripAdvisor::before {
+                width: 10% !important;
+                left: 40% !important;
+            }
+        }
+    }
+}

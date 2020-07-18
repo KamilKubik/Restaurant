@@ -1,0 +1,859 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #69510F;
+
+.fivePage {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    .reviewPhoto {
+        background-image: url(../svg/reviewPhotoSvgOfficial.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .review {
+        position: relative;
+
+        .titleBox {
+            position: relative;
+            width: 100%;
+            height: 5vh;
+
+            .title {
+                position: absolute;
+                color: whitesmoke;
+                text-align: center;
+                font-size: 1rem;
+                letter-spacing: 3px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+            }
+
+            .title::after {
+                content: '';
+                display: block;
+                width: 30%;
+                height: 1px;
+                background-color: $main-color;
+                margin: 0 auto;
+            }
+        }
+
+        //                                                             SUBTITLE
+
+        .subtitleBox {
+            position: relative;
+            width: 100%;
+            height: 5vh;
+
+            .subtitle {
+                position: absolute;
+                color: whitesmoke;
+                text-align: center;
+                font-size: 0.75rem;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .nonActive {
+            opacity: 0;
+        }
+
+        .commasBox {
+            position: relative;
+            width: 100%;
+            height: 5vh;
+
+            .commas {
+                position: absolute;
+                color: $main-color;
+                text-align: center;
+                left: 50%;
+                top: 20%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        //                                                             OPINION
+
+        .opinionBox {
+            position: relative;
+            width: 100%;
+            height: 20vh;
+
+            
+            .opinion {
+                position: absolute;
+                color: whitesmoke;
+                text-align: center;
+                font-size: 0.6rem;
+                width: 50%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        //                                                              NAME
+
+        .nameBox {
+            position: relative;
+            width: 100%;
+            height: 5vh;
+            
+            .name {
+                position: absolute;
+                color: $main-color;
+                text-align: center;
+                // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+                font-size: 0.8rem;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 400;
+            }
+        }
+
+        .arrowBox {
+            position: relative;
+            width: 100%;
+            height: 10vh;
+
+            .arrowDownFour {
+                height: 26px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+
+        .arrowRightBox {
+            position: absolute;
+            height: 100%;
+            width: 10%;
+            top: 0;
+            right: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+
+            .arrowRight {
+                height: 26px;
+                cursor: pointer;
+            }
+        }
+
+        
+        .arrowLeftBox {
+            position: absolute;
+            height: 100%;
+            width: 10%;
+            top: 0;
+            left: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+
+            .arrowLeft {
+                height: 26px;
+                cursor: pointer;
+            }
+        }
+
+        .dotsContainer {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+        }
+    }
+}
+
+//                                                     400px
+
+@media (min-width: 400px) and (orientation: portrait) {
+    .review {
+        .titleBox {
+            height: 10vh !important;
+
+            .title{
+                // font-size: calc(16px + (48 - 16) * ((100vw - 300px) / (1920 - 400))) !important;
+                // font-family: 'Rokkitt', serif;
+                // font-weight: 400;
+                font-size: 1.4rem !important;
+            }
+        }
+
+        .subtitleBox {
+            .subtitle {
+                // font-size: calc(14px + (36 - 14) * ((100vw - 300px) / (1920 - 400))) !important;
+                // font-family: 'Rokkitt', serif;
+                // font-weight: 400;
+                font-size: 1rem !important;
+            }
+        }
+
+        .commasBox {
+            .commas {
+                // font-size: calc(48px + (100 - 48) * ((100vw - 300px) / (1920 - 300))) !important;
+                // font-family: 'Rokkitt', serif;
+                // font-weight: 400;
+                font-size: 2.6rem !important;
+            }
+        }
+
+        .opinionBox {
+            .opinion {
+                // font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1920 - 300))) !important;
+                // font-family: 'Rokkitt', serif;
+                // font-weight: 400;
+                font-size: 0.8rem !important;
+                width: 62.5% !important;
+            }
+        }
+
+        .nameBox {
+            .name {
+                // font-size: calc(14px + (36 - 14) * ((100vw - 300px) / (1920 - 300))) !important;
+                // font-family: 'Rokkitt', serif;
+                // font-weight: 400;
+                font-size: 1rem !important;
+            }
+        }
+
+        .arrowRight {
+            height: 36px !important;
+            position: absolute;
+            right: 50%;
+        }
+
+        .arrowLeft {
+            height: 36px !important;
+            position: absolute;
+            left: 50%;
+        }
+
+        .arrowBox {
+            height: 5vh !important;
+
+            .arrowDownFour {
+                height: 32px;
+            }
+        }
+    }
+}
+
+//                                                            700px
+
+@media (min-width: 700px) and (orientation: portrait) {
+    .fivePage {
+        grid-template-rows: 40% 60%;
+
+        .review {
+            .boxBefore {
+                height: 27.5% !important;
+            }
+
+            .titleBox {
+                height: 10% !important;
+    
+                .title{
+                    font-size: 1.6rem !important;
+                }
+            }
+    
+            .subtitleBox {
+                height: 5% !important;
+
+                .subtitle {
+                    font-size: 1.2rem !important;
+                }
+            }
+    
+            .commasBox {
+                height: 5% !important;
+
+                .commas {
+                    font-size: 3rem !important;
+                }
+            }
+    
+            .opinionBox {
+                height: 25% !important;
+
+                .opinion {
+                    font-size: 1rem !important;
+                    width: 62.5% !important;
+                }
+            }
+    
+            .nameBox {
+                height: 5% !important;
+
+                .name {
+                    top: 0 !important;
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            .boxAfter {
+                height: 15% !important;
+            }
+    
+            .arrowRight {
+                height: 46px !important;
+                position: absolute;
+                right: 50%;
+            }
+    
+            .arrowLeft {
+                height: 46px !important;
+                position: absolute;
+                left: 50%;
+            }
+    
+            .arrowBox {
+                height: 7.5% !important;
+    
+                .arrowDownFour {
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+//                                                            900px
+
+@media (min-width: 900px) {
+    .fivePage {
+        grid-template-rows: 40% 60%;
+
+        .review {
+
+            .titleBox {
+                .title{
+                    font-size: 1.6rem !important;
+                }
+            }
+    
+            .subtitleBox {
+                .subtitle {
+                    font-size: 1.2rem !important;
+                }
+            }
+    
+            .commasBox {
+                .commas {
+                    font-size: 3rem !important;
+                }
+            }
+    
+            .opinionBox {
+                .opinion {
+                    font-size: 1rem !important;
+                    width: 62.5% !important;
+                }
+            }
+    
+            .nameBox {
+                .name {
+                    font-size: 1.2rem !important;
+                }
+            }
+    
+            .arrowRight {
+                height: 46px !important;
+            }
+    
+            .arrowLeft {
+                height: 46px !important;
+
+            }
+    
+            .arrowBox {
+                .arrowDownFour {
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+//                                                               1200px
+
+@media (min-width: 1200px) {
+    .fivePage {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+
+        .review {
+            .boxBefore {
+                height: 27.5% !important;
+            }
+
+            .titleBox {
+                height: 10% !important;
+
+                .title{
+                    font-size: 2rem !important;
+                }
+            }
+    
+            .subtitleBox {
+                height: 5% !important;
+
+                .subtitle {
+                    font-size: 1.4rem !important;
+                }
+            }
+    
+            .commasBox {
+                height: 5% !important;
+
+                .commas {
+                    font-size: 3.8rem !important;
+                }
+            }
+    
+            .opinionBox {
+                height: 25% !important;
+
+                .opinion {
+                    font-size: 1.2rem !important;
+                    width: 40% !important;
+                }
+            }
+    
+            .nameBox {
+                height: 5% !important;
+
+                .name {
+                    font-size: 1.4rem !important;
+                }
+            }
+
+            .boxAfter {
+                height: 20% !important;
+            }
+    
+            .arrowRightBox {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                height: 0 !important;
+            }
+    
+            .arrowLeftBox {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                height: 0 !important;
+            }
+
+            .dotsContainer {
+                opacity: 1;
+                visibility: visible;
+                height: 20vh;
+                width: 10vh;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                text-align: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);
+
+                .dotContainer {
+                    position: relative;
+
+                    .dot {
+                        position: absolute;
+                        height: 15px;
+                        width: 15px;
+                        border: 2px solid $main-color;
+                        border-radius: 50%;
+                        top: 50%;
+                        right: 0;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                    }
+
+                    .dot:hover {
+                        background-color: $main-color;
+                    }
+                }
+            }
+    
+            .arrowBox {
+                height: 10vh !important;
+                position: absolute !important;
+                bottom: 0 !important;
+                left: -33.5% !important;
+    
+                .arrowDownFour {
+                    height: 42px !important;
+                }
+            }
+        }
+    }
+}
+
+//                                                                   1600px
+
+@media(min-width: 1600px) {
+    .fivePage {
+        .review {
+            .titleBox {
+                .title {
+                    font-size: 2.6rem !important;
+                }
+            }
+
+            .nameBox {
+                .name {
+                    font-size: 1.6rem !important;
+                }
+            }
+
+                
+            .arrowBox {
+                .arrowDownFour {
+                    height: 52px !important;
+                }
+            }
+        }
+    }
+}
+
+//                                                                   2600px
+
+@media(min-width: 2600px) {
+    .fivePage {
+        .review {
+            .titleBox {
+                .title {
+                    font-size: 3.2rem !important;
+                }
+
+                .title::after {
+                    height: 2px !important;
+                }
+            }
+
+            .subtitleBox {
+                .subtitle {
+                    font-size: 1.8rem !important;
+                }
+            }
+
+            .nameBox {
+                .name {
+                    font-size: 2rem !important;
+                }
+            }
+
+            .commasBox {
+                .commas {
+                    font-size: 5rem !important;
+                }
+            }
+
+            .opinionBox {
+                .opinion {
+                    font-size: 1.6rem !important;
+                }
+            }
+
+            .dotsContainer {
+                .dotContainer {
+                    .dot {
+                        height: 20px !important;
+                        width: 20px !important;
+                    }
+                }
+            }
+
+                
+            .arrowBox {
+                .arrowDownFour {
+                    height: 62px !important;
+                }
+            }
+        }
+    }
+}
+
+//                                                                   3200px
+
+@media(min-width: 3200px) {
+    .fivePage {
+        .review {
+            .titleBox {
+                .title {
+                    font-size: 4.2rem !important;
+                }
+            }
+
+            .subtitleBox {
+                .subtitle {
+                    font-size: 2.2rem !important;
+                }
+            }
+
+            .nameBox {
+                .name {
+                    font-size: 2.4rem !important;
+                }
+            }
+
+            .commasBox {
+                .commas {
+                    font-size: 7rem !important;
+                }
+            }
+
+            .opinionBox {
+                .opinion {
+                    font-size: 2rem !important;
+                }
+            }
+
+            .dotsContainer {
+                .dotContainer {
+                    .dot {
+                        height: 20px !important;
+                        width: 20px !important;
+                    }
+                }
+            }
+
+            .arrowBox {
+                .arrowDownFour {
+                    height: 72px !important;
+                }
+            }
+        }
+    }
+}
+
+//                                                                   3800px
+
+@media(min-width: 3800px) {
+    .fivePage {
+        .review {
+            .titleBox {
+                .title {
+                    font-size: 5.6rem !important;
+                }
+            }
+
+            .subtitleBox {
+                .subtitle {
+                    font-size: 3rem !important;
+                }
+            }
+
+            .nameBox {
+                .name {
+                    font-size: 2.8rem !important;
+                }
+            }
+
+            .commasBox {
+                .commas {
+                    font-size: 9rem !important;
+                }
+            }
+
+            .opinionBox {
+                .opinion {
+                    font-size: 2.3rem !important;
+                }
+            }
+
+            .dotsContainer {
+                .dotContainer {
+                    .dot {
+                        height: 25px !important;
+                        width: 25px !important;
+                    }
+                }
+            }
+
+            .arrowBox {
+                .arrowDownFour {
+                    height: 82px !important;
+                }
+            }
+        }
+    }
+}
+
+// orientation: landscape
+
+@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+    .fivePage {
+        grid-template-rows: 40% 60%;
+        .review {
+            .boxBefore {
+                height: 12.5% !important;
+            }
+
+            .titleBox {
+                height: 10% !important;
+                .title {
+                    font-size: 0.8rem !important;
+                }
+            }
+
+            .subtitleBox {
+                height: 10% !important;
+                .subtitle {
+                    font-size: 0.6rem !important;
+                }
+            }
+
+            .nameBox {
+                height: 5% !important;
+                .name {
+                    font-size: 0.8rem !important;
+                }
+            }
+
+            .commasBox {
+                height: 5% !important;
+                .commas {
+                    font-size: 2rem !important;
+                }
+            }
+
+            .opinionBox {
+                height: 40% !important;
+                .opinion {
+                    font-size: 0.5rem !important;
+                }
+            }
+
+            .boxAfter {
+                height: 10% !important;
+            }
+
+            .arrowRight {
+                position: absolute;
+                right: 50%;
+            }
+
+            .arrowLeft {
+                position: absolute;
+                left: 50%;
+            }
+
+            .arrowBox {
+                height: 7.5% !important;
+
+                .arrowDownFour {
+                    height: 22px !important;
+                }
+            }
+        }
+    }
+}
+
+// orientation: landscape 800px
+
+@media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: landscape) {
+    .fivePage {
+        .review {
+            .titleBox {
+                .title {
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            .opinionBox {
+                .opinion {
+                    width: 30% !important;
+                }
+            }
+        }
+    }
+}
+
+// orientation: landscape 1000px
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+    .fivePage {
+        .review {
+            .titleBox {
+                .title {
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            .subtitleBox {
+                .subtitle {
+                    font-size: 0.8rem !important;
+                }
+            }
+
+            .nameBox {
+                .name {
+                    font-size: 1rem !important;
+                }
+            }
+
+            .commasBox {
+                .commas {
+                    font-size: 2.6rem !important;
+                }
+            }
+
+            .opinionBox {
+                .opinion {
+                    font-size: 0.7rem !important;
+                    width: unset !important;
+                }
+            }
+
+            .boxBefore {
+                height: 7.5%;
+            }
+
+            .arrowRight {
+                height: 36px !important;
+                position: absolute;
+                right: 50%;
+            }
+
+            .arrowLeft {
+                height: 36px !important;
+                position: absolute;
+                left: 50%;
+            }
+
+            .arrowBox {
+                .arrowDownFour {
+                    height: 26px !important;
+                }
+            }
+        }
+    }
+}
