@@ -34,7 +34,7 @@ const SeventhPage = () => {
                     <h2 className='coctailTitle'>COCTAILS</h2>
                 </div>
             </div>
-            <Link to='/gallery'><img src={arrowRightGallery} className='arrowRightGallery'></img></Link>
+            {/* <Link to='/gallery'><img src={arrowRightGallery} className='arrowRightGallery'></img></Link> */}
             <div className='arrowDownGallery'></div>
             <ArrowDownSix></ArrowDownSix>
         </div>

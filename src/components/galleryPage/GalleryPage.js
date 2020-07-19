@@ -2,14 +2,20 @@ import React from 'react';
 import ContactPage from '../contactPage/ContactPage';
 import arrowBack from '../../svg/arrowLeftSvg.svg';
 import { Link } from 'react-router-dom';
+import GalleryArrowDown from './GalleryArrowDown';
 
 const GalleryPage = () => {
 
     return (
         <div className='galleryPage'>
+
+            <div className='galleryBarOne'></div>
+            <div className='galleryBarTwo'></div>
+            <div className='galleryBarThree'></div>
+
             <div className='titleContainer'>
                 <div className='arrowBackContainer'>
-                    <Link to='/'><img className='arrowBack' src={arrowBack}></img></Link>
+                    <img className='arrowBack' src={arrowBack}></img>
                 </div>
                 <div className='centerContainer'>
                     <h2>This is simple</h2>
@@ -17,7 +23,7 @@ const GalleryPage = () => {
                 </div>
             </div>
 
-            <div className='galleryContainer'>
+            <div className='galleryPageContainer'>
 
                 <div className='containerOne'>
                     <div className='photoOneContainer'>
@@ -95,6 +101,8 @@ const GalleryPage = () => {
                 </div>
 
             </div>
+
+            <GalleryArrowDown></GalleryArrowDown>
 
             <ContactPage></ContactPage>
         </div>

@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #69510F;
+
+.menuPage {
+    background-color: black;
+
+    .menuTitle {
+        position: relative;
+        height: 15vh;
+        width: 100%;
+
+        .menuPageTitleContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h2 {
+                color: $main-color;
+                font-size: 0.6rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+            }
+
+            h1 {
+                color: whitesmoke;
+                font-size: 1rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
+            }
+        }
+
+        .arrowBackContainer {
+            position: absolute;
+            height: 100%;
+            width: 20%;
+
+            .arrowBack {
+                height: 22px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .startersContainer {
+        position: relative;
+        height: 15vh;
+        width: 100%;
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $main-color;
+            font-size: 0.8rem;
+            font-family: 'Rokkitt', serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .startersBar {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 1px;
+            width: 100%;
+            background-color: white;
+        }
+    }
+
+    .menuPageStarterContainer {
+        height: 60vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        font-family: 'Rokkitt', serif;
+        font-weight: 400;
+
+        .menuGrid {
+            position: relative;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .dishContainer {
+                transform: translateY(50%);
+
+                .starterName {
+                    color: $main-color;
+                    font-size: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                }
+    
+                .starterName::after {
+                    content: '';
+                    border-top: 0.5px solid $main-color;
+                    margin-left: 5%;
+                    width: 35%;
+                }
+    
+                .starterIngredients {
+                    font-family: 'Rokkitt', serif;
+                    color: whitesmoke;
+                    font-size: 0.4rem;
+                    font-weight: 400;
+                }
+    
+                .starterPrice {
+                    color: $main-color;
+                    font-size: 0.5rem;
+                    font-family: 'Rokkitt', serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .mainDishContainer {
+        position: relative;
+        height: 15vh;
+        width: 100%;
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $main-color;
+            font-size: 0.8rem;
+            font-family: 'Rokkitt', serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .mainDishBar {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 1px;
+            width: 100%;
+            background-color: white;
+        }
+    }
+
+    .menuPageMainDishContainer {
+        height: 105vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        font-family: 'Rokkitt', serif;
+        font-weight: 400;
+
+        .menuGrid {
+            position: relative;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .dishContainer {
+                transform: translateY(50%);
+
+                .mainDishName {
+                    color: $main-color;
+                    font-size: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                }
+    
+                .mainDishName::after {
+                    content: '';
+                    border-top: 0.5px solid $main-color;
+                    margin-left: 5%;
+                    width: 35%;
+                }
+    
+                .mainDishIngredients {
+                    font-family: 'Rokkitt', serif;
+                    color: whitesmoke;
+                    font-size: 0.4rem;
+                    font-weight: 400;
+                }
+    
+                .mainDishPrice {
+                    color: $main-color;
+                    font-size: 0.5rem;
+                    font-family: 'Rokkitt', serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .coctailsContainer {
+        position: relative;
+        height: 15vh;
+        width: 100%;
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $main-color;
+            font-size: 0.8rem;
+            font-family: 'Rokkitt', serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .coctailsBar {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 1px;
+            width: 100%;
+            background-color: white;
+        }
+    }
+
+    .menuPageCoctailContainer {
+        height: 60vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        font-family: 'Rokkitt', serif;
+        font-weight: 400;
+
+        .menuGrid {
+            position: relative;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .coctailContainer {
+                transform: translateY(50%);
+
+                .coctailName {
+                    color: $main-color;
+                    font-size: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                }
+    
+                .coctailName::after {
+                    content: '';
+                    border-top: 0.5px solid $main-color;
+                    margin-left: 5%;
+                    width: 35%;
+                }
+    
+                .coctailIngredients {
+                    font-family: 'Rokkitt', serif;
+                    color: whitesmoke;
+                    font-size: 0.4rem;
+                    font-weight: 400;
+                }
+    
+                .coctailPrice {
+                    color: $main-color;
+                    font-size: 0.5rem;
+                    font-family: 'Rokkitt', serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

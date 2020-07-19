@@ -7,13 +7,38 @@
 $main-color: #69510F;
 
 .galleryPage {
-    height: 100vh;
-    width: 100%;
     background-color: black;
+
     
+    .galleryBarOne {
+        height: 130vh;
+        width: 1px;
+        background-color: $main-color;
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+
+    .galleryBarTwo {
+        height: 130vh;
+        width: 1px;
+        background-color: $main-color;
+        position: absolute;
+        top: 0;
+        right: 30%;
+    }
+
+    .galleryBarThree {
+        height: 1px;
+        width: 100%;
+        background-color: $main-color;
+        position: absolute;
+        top: 25%;
+    }
+
     .titleContainer {
         position: relative;
-        height: 15%;
+        height: 15vh;
         width: 100%;
 
         .arrowBackContainer {
@@ -40,25 +65,29 @@ $main-color: #69510F;
                 color: $main-color;
                 text-align: center;
                 font-size: 0.6rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
             }
     
             h1 {
                 color: whitesmoke;
                 text-align: center;
                 font-size: 1rem;
+                font-family: 'Rokkitt', serif;
+                font-weight: 400;
             }
         }
     }
 
-    .galleryContainer {
-        height: 75%;
+    .galleryPageContainer {
+        height: 100vh;
         width: 100%;
 
         //                                                                              FIRST CONTAINER
 
         .containerOne {
             position: relative;
-            height: 12.5vh;
+            height: 16%;
             width: 100%;
             display: grid;
             grid-template-columns: 17% 17% 17% 34%;
@@ -136,8 +165,8 @@ $main-color: #69510F;
 
         .containerTwo {
             position: relative;
-            margin-top: 5%;
-            height: 12.5vh;
+            top: 5%;
+            height: 16%;
             width: 100%;
             display: grid;
             grid-template-columns: 17% 34% 17% 17%;
@@ -215,8 +244,8 @@ $main-color: #69510F;
 
         .containerThree {
             position: relative;
-            margin-top: 5%;
-            height: 12.5vh;
+            top: 10%;
+            height: 16%;
             width: 100%;
             display: grid;
             grid-template-columns: 17% 34% 17% 17%;
@@ -296,8 +325,8 @@ $main-color: #69510F;
 
         .containerFour {
             position: relative;
-            margin-top: 5%;
-            height: 12.5vh;
+            top: 15%;
+            height: 16%;
             width: 100%;
             display: grid;
             grid-template-columns: 17% 34% 17% 17%;
@@ -375,8 +404,8 @@ $main-color: #69510F;
 
         .containerFive {
             position: relative;
-            margin-top: 5%;
-            height: 12.5vh;
+            top: 20%;
+            height: 16%;
             width: 100%;
             display: grid;
             grid-template-columns: 34% 17% 17% 17%;
@@ -452,7 +481,7 @@ $main-color: #69510F;
 
         .arrowDownBox {
             position: relative;
-            height: 10%;
+            height: 15vh;
             width: 100%;
 
             .arrowDownGallery {
@@ -461,6 +490,482 @@ $main-color: #69510F;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+
+
+
+    @media(min-width: 400px) and (orientation: portrait) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 26px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 0.8rem;
+                    }
+            
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 26px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 600px) and (orientation: portrait) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 32px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 0.9rem;
+                    }
+            
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 32px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 800px) and (orientation: portrait) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 36px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+            
+                    h1 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 36px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1000px) and (orientation: portrait) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 42px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+            
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 42px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1400px) and (orientation: portrait) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 46px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+            
+                    h1 {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 46px;
+                }
+            }
+        }
+    }
+
+    // orientation: landscape
+
+    @media(min-width: 0) and (orientation: landscape) {
+        .galleryPage {
+
+            .galleryBarOne {
+                height: 270vh;
+            }
+
+            .galleryBarTwo {
+                height: 270vh;
+            }
+
+            .titleContainer {
+                height: 30vh;
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 22px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 0.6rem;
+                    }
+            
+                    h1 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .galleryPageContainer {
+                height: 200vh;
+            }
+
+            .arrowDownBox {
+                height: 40vh;
+                .arrowDownGallery {
+                    height: 22px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 700px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 32px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 0.8rem;
+                    }
+            
+                    h1 {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 32px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1000px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 38px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+            
+                    h1 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 38px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1300px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 42px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+            
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 42px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1600px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 48px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+            
+                    h1 {
+                        font-size: 2.6rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 48px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1900px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 56px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 2rem;
+                    }
+            
+                    h1 {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 56px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 2400px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 68px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 2.4rem;
+                    }
+            
+                    h1 {
+                        font-size: 3.6rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 68px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 2900px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 76px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 2.6rem;
+                    }
+            
+                    h1 {
+                        font-size: 4rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 76px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 3200px) and (orientation: landscape) {
+        .galleryPage {
+            .galleryBarOne {
+                width: 2px;
+            }
+        
+            .galleryBarTwo {
+                width: 2px;;
+            }
+
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 82px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 2.8rem;
+                    }
+            
+                    h1 {
+                        font-size: 4.2rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 82px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 3600px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 92px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 3.2rem;
+                    }
+            
+                    h1 {
+                        font-size: 4.6rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 92px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 3800px) and (orientation: landscape) {
+        .galleryPage {
+            .titleContainer {
+                .arrowBackContainer {
+                    .arrowBack {
+                        height: 102px;
+                    }
+                }
+        
+                .centerContainer {
+                    h2 {
+                        font-size: 3.2rem;
+                    }
+            
+                    h1 {
+                        font-size: 4.8rem;
+                    }
+                }
+            }
+
+            .arrowDownBox {
+                .arrowDownGallery {
+                    height: 102px;
+                }
             }
         }
     }
