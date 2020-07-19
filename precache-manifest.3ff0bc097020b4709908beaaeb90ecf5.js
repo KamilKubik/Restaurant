@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f5c8db5183a155edb1637ba80a41a9b",
+    "revision": "e0a35c9569e8d61eb049b6e56b1daab7",
     "url": "/Restaurant/index.html"
   },
   {
-    "revision": "9bfcd95eee39b5151d6b",
-    "url": "/Restaurant/static/css/main.81cf741e.chunk.css"
+    "revision": "a864d0ca34c81cde47cf",
+    "url": "/Restaurant/static/css/main.b672c17f.chunk.css"
   },
   {
-    "revision": "9f23beb5b5f0f2181625",
-    "url": "/Restaurant/static/js/2.87d0ce4b.chunk.js"
+    "revision": "ab23f7368ed5547ec4f1",
+    "url": "/Restaurant/static/js/2.b7ab44d9.chunk.js"
   },
   {
     "revision": "091090b0b596633249afe761b44ebeb1",
-    "url": "/Restaurant/static/js/2.87d0ce4b.chunk.js.LICENSE.txt"
+    "url": "/Restaurant/static/js/2.b7ab44d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9bfcd95eee39b5151d6b",
-    "url": "/Restaurant/static/js/main.f46b73fd.chunk.js"
+    "revision": "a864d0ca34c81cde47cf",
+    "url": "/Restaurant/static/js/main.6661ef48.chunk.js"
   },
   {
-    "revision": "dee19eed088dced54172",
-    "url": "/Restaurant/static/js/runtime-main.a6b95d91.js"
+    "revision": "01767b6aab63e444ed85",
+    "url": "/Restaurant/static/js/runtime-main.136f74a0.js"
   },
   {
     "revision": "18dd45bf6ce82adaee9f386c911972a2",
@@ -56,8 +56,52 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Restaurant/static/media/gallery1.24c5b254.svg"
   },
   {
+    "revision": "1a2a2d6fc6657db996127a2c0da835e1",
+    "url": "/Restaurant/static/media/gallery10.1a2a2d6f.svg"
+  },
+  {
+    "revision": "d4d18ba1868daaa6890a62567e31ddb8",
+    "url": "/Restaurant/static/media/gallery11.d4d18ba1.svg"
+  },
+  {
+    "revision": "28a141b34f3f6b966385f1224a9bad74",
+    "url": "/Restaurant/static/media/gallery12.28a141b3.svg"
+  },
+  {
+    "revision": "395ba935d0ce5fbd15ae0901ac8a5f4f",
+    "url": "/Restaurant/static/media/gallery13.395ba935.svg"
+  },
+  {
+    "revision": "777c7bce1bbd74bcbdf80efd51e5a7f7",
+    "url": "/Restaurant/static/media/gallery14.777c7bce.svg"
+  },
+  {
+    "revision": "3bdad792cccc7dbd881a5502acd84e2c",
+    "url": "/Restaurant/static/media/gallery15.3bdad792.svg"
+  },
+  {
+    "revision": "46ecebe0d759f65ec40ed0e11f6e524b",
+    "url": "/Restaurant/static/media/gallery16.46ecebe0.svg"
+  },
+  {
+    "revision": "76f9843e0ccd3a0aeae64ce88d71c462",
+    "url": "/Restaurant/static/media/gallery17.76f9843e.svg"
+  },
+  {
+    "revision": "48793c74f750f4684e2562654ed5b9cd",
+    "url": "/Restaurant/static/media/gallery18.48793c74.svg"
+  },
+  {
+    "revision": "3b562af40c71e3e1d47789d97a4f44a0",
+    "url": "/Restaurant/static/media/gallery19.3b562af4.svg"
+  },
+  {
     "revision": "357a2b35217557d1ba0786d8c6ded603",
     "url": "/Restaurant/static/media/gallery2.357a2b35.svg"
+  },
+  {
+    "revision": "8a80da4d9f6f6fa0abcbd85b0b22552a",
+    "url": "/Restaurant/static/media/gallery20.8a80da4d.svg"
   },
   {
     "revision": "684a082882804ca72880c208753e8558",
@@ -82,6 +126,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f96e60509963effe50fa75406f90d8f1",
     "url": "/Restaurant/static/media/gallery8.f96e6050.svg"
+  },
+  {
+    "revision": "134e8e185a7b18d22f59387216c54c2d",
+    "url": "/Restaurant/static/media/gallery9.134e8e18.svg"
   },
   {
     "revision": "4a2a98b1d6492ef7e991f2a90aa7a414",
