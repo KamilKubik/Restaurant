@@ -5,7 +5,7 @@ import MenuPage from './components/menuPage/MenuPage';
 
 import MenuData from './components/menuPage/MenuData';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './styles/FirstPage.scss';
 import './styles/secondPage.scss';
