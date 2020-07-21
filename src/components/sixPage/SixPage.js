@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import client from './client';
 import ArrowDownFive from './ArrowDownFive';
+import { Link } from 'react-router-dom';
 
 const SixPage = () => {
 
@@ -44,7 +45,7 @@ const SixPage = () => {
                 }) : null}
             </div>
             <div className='viewAllContainer'>
-                <button className='viewAllButton'>VIEW ALL</button>
+                <Link to='/menu'><button className='viewAllButton'>VIEW ALL</button></Link>
             </div>
             <div className='menuArrowDown'>
                 <ArrowDownFive></ArrowDownFive>

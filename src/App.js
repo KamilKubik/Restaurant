@@ -24,7 +24,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='' component={Container}></Route>
+        <Route exact path='/' component={Container}></Route>
         <Route path='/gallery' component={GalleryPage}></Route>
         <Route path='/menu' component={MenuData}></Route>
       </Switch>
