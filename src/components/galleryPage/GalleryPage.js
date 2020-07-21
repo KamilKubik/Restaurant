@@ -15,7 +15,7 @@ const GalleryPage = () => {
 
             <div className='titleContainer'>
                 <div className='arrowBackContainer'>
-                    <img className='arrowBack' src={arrowBack}></img>
+                    <Link to='/'><img className='arrowBack' src={arrowBack}></img></Link>
                 </div>
                 <div className='centerContainer'>
                     <h2>This is simple</h2>

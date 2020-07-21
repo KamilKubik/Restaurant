@@ -1,6 +1,6 @@
 import React from 'react';
 import starter from '../../svg/starter/starterPhotoSvgOff.svg';
-import mainCourse from '../../svg/mainCourse/mainCourseSvgOff.svg';
+import mainCourse from '../../svg/mainCourse/mainCourseTwoSvg.svg';
 import coctail from '../../svg/coctail/coctailSvgOff.svg';
 import arrowRightGallery from '../../svg/icons/arrow-right-brown.png';
 import ArrowDownSix from './ArrowDownSix';
@@ -34,9 +34,10 @@ const SeventhPage = () => {
                     <h2 className='coctailTitle'>COCTAILS</h2>
                 </div>
             </div>
-            {/* <Link to='/gallery'><img src={arrowRightGallery} className='arrowRightGallery'></img></Link> */}
-            <div className='arrowDownGallery'></div>
-            <ArrowDownSix></ArrowDownSix>
+            <Link to='/gallery'><img src={arrowRightGallery} className='arrowRightGallery'></img></Link>
+            <div className='arrowDownGallery'>
+                <ArrowDownSix></ArrowDownSix>
+            </div>
         </div>
 
     )

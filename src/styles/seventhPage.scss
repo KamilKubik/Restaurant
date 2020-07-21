@@ -26,7 +26,7 @@ $main-color: #69510F;
 
             .gallerySubtitle {
                 color: $main-color;
-                font-size: 0.9rem;
+                font-size: 0.7rem;
                 font-family: 'Rokkitt', serif;
                 font-weight: 400;
                 text-align: center;
@@ -35,7 +35,7 @@ $main-color: #69510F;
             .galleryTitle {
                 color: whitesmoke;
                 display: flex;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-family: 'Rokkitt', serif;
                 font-weight: 400;
                 text-align: center;
@@ -143,7 +143,7 @@ $main-color: #69510F;
     }
 
     .arrowDownSix {
-        height: 26px;
+        height: 28px;
         position: absolute;
         bottom: 0%;
         left: 50%;
@@ -152,9 +152,9 @@ $main-color: #69510F;
     }
 }
 
-//                                            400px
+//                                            600px
 
-@media (min-width: 400px) and (orientation: portrait) {
+@media (min-width: 600px) and (orientation: portrait) {
     .galleryTitle {
         .gallerySubtitle {
             font-size: 1rem !important;
@@ -162,35 +162,40 @@ $main-color: #69510F;
 
         .galleryTitle {
             font-size: 1.4rem !important;
+            letter-spacing: 1px;
         }
     }
 
     .starterContainer {
         .starterTitle {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
         }
     }
 
     .mainCourseContainer {
         .mainCourseTitle {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
         }
     }
 
     .coctailContainer {
         .coctailTitle {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
         }
     }
 
+    .arrowRightGallery {
+        height: 46px !important;
+    }
+
     .arrowDownSix {
-        height: 32px !important;
+        height: 36px !important;
     }
 }
 
-//                                                         700px
+//                                                         800px
 
-@media (min-width: 700px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: portrait) {
     .galleryTitle {
         .gallerySubtitle {
             font-size: 1.2rem !important;
@@ -199,101 +204,52 @@ $main-color: #69510F;
         .galleryTitle {
             font-size: 1.6rem !important;
         }
-    }
 
-    .starterContainer {
-        .starterTitle {
-            font-size: 1.2rem !important;
+        .arrowDownSix {
+            height: 42px !important;
         }
-
-        
-        .starter {
-            height: 65% !important;
-        }
-    }
-
-    .mainCourseContainer {
-        .mainCourseTitle {
-            font-size: 1.2rem !important;
-        }
-
-        .mainCourse {
-            height: 60% !important;
-        }
-    }
-
-    .coctailContainer {
-        .coctailTitle {
-            font-size: 1.2rem !important;
-        }
-
-        
-        .coctail {
-            height: 90% !important;
-        }
-    }
-
-    .arrowRightGallery {
-        height: 52px !important;
-    }
-
-    .arrowDownSix {
-        height: 36px !important;
     }
 }
 
-//                                                         900px
 
-@media (min-width: 900px) {
+//                                            1000px
+
+@media (min-width: 1000px) and (orientation: portrait) {
     .galleryTitle {
         .gallerySubtitle {
-            font-size: 1.2rem !important;
+            font-size: 1.4rem !important;
         }
 
         .galleryTitle {
-            font-size: 1.6rem !important;
+            font-size: 1.8rem !important;
+            letter-spacing: 1px;
         }
     }
 
     .starterContainer {
         .starterTitle {
-            bottom: -10% !important;
             font-size: 1.2rem !important;
-        }
-
-        .starter {
-            height: 75% !important;
         }
     }
 
     .mainCourseContainer {
         .mainCourseTitle {
-            bottom: -5% !important;
             font-size: 1.2rem !important;
-        }
-
-        .mainCourse {
-            height: 65% !important;
         }
     }
 
     .coctailContainer {
         .coctailTitle {
-            bottom: -15% !important;
             font-size: 1.2rem !important;
-        }
-
-        .coctail {
-            height: 85% !important;
         }
     }
 
     .arrowRightGallery {
-        height: 52px !important;
+        height: 62px !important;
     }
 
     .arrowDownSix {
-        height: 36px !important;
+        height: 46px !important;
     }
 }
 
@@ -324,15 +280,16 @@ $main-color: #69510F;
             height: 100% !important;
 
             .starterTitle {
-                font-size: 1.5rem !important;
-                top: 50% !important;
-                bottom: unset !important;
-                transform: translate(75%, -50%) rotate(90deg) !important;
+                font-size: 1.2rem !important;
+                left: 50%;
+                bottom: 0 !important;
+                transform: translate(-50%, -50%)!important;
+                letter-spacing: 1px;
             }
     
             
             .starter {
-                height: 250px !important;
+                height: 190px !important;
             }
         }
     
@@ -340,15 +297,15 @@ $main-color: #69510F;
             height: 100% !important;
 
             .mainCourseTitle {
-                font-size: 1.5rem !important;
-                left: 52.5% !important;
-                top: 50% !important;
-                bottom: unset !important;
-                transform: translate(50%, -50%) rotate(90deg) !important;
+                font-size: 1.2rem !important;
+                left: 50% !important;
+                bottom: 0 !important;
+                transform: translate(-50%, -50%) !important;
+                letter-spacing: 1px;
             }
     
             .mainCourse {
-                height: 225px !important;
+                height: 175px !important;
             }
         }
     
@@ -356,15 +313,16 @@ $main-color: #69510F;
             height: 100% !important;
 
             .coctailTitle {
-                font-size: 1.5rem !important;
-                top: 50% !important;
-                bottom: unset !important;
-                transform: translate(0, -50%) rotate(90deg) !important;
+                font-size: 1.2rem !important;
+                left: 50%;
+                bottom: 0 !important;
+                transform: translate(-50%, -50%) !important;
+                letter-spacing: 1px;
             }
     
             
             .coctail {
-                height: 250px !important;
+                height: 200px !important;
             }
         }
     }
@@ -399,42 +357,42 @@ $main-color: #69510F;
 @media (min-width: 1600px) {
     .galleryTitle {
         .gallerySubtitle {
-            font-size: 1.4rem !important;
+            font-size: 1.3rem !important;
         }
 
         .galleryTitle {
-            font-size: 2.2rem !important;
+            font-size: 1.7rem !important;
         }
     }
 
     .galleryContainer {
         .starterContainer {
             .starterTitle {
-                font-size: 1.6rem !important;
+                font-size: 1.4rem !important;
             }
     
             .starter {
-                height: 275px !important;
+                height: 215px !important;
             }
         }
     
         .mainCourseContainer {
             .mainCourseTitle {
-                font-size: 1.6rem !important;
+                font-size: 1.4rem !important;
             }
     
             .mainCourse {
-                height: 250px !important;
+                height: 200px !important;
             }
         }
     
         .coctailContainer {
             .coctailTitle {
-                font-size: 1.6rem !important;
+                font-size: 1.4rem !important;
             }
     
             .coctail {
-                height: 275px !important;
+                height: 225px !important;
             }
         }
     }
@@ -444,57 +402,111 @@ $main-color: #69510F;
     }
 
     .arrowDownSix {
-        height: 52px !important;
+        height: 42px !important;
     }
 }
 
-//                                                         2600px
+//                                                         1900px
 
-@media (min-width: 2600px) {
+@media (min-width: 1900px) {
     .galleryTitle {
         .gallerySubtitle {
-            font-size: 2rem !important;
+            font-size: 1.4rem !important;
         }
 
         .galleryTitle {
-            font-size: 2.8rem !important;
+            font-size: 2rem !important;
         }
     }
 
     .galleryContainer {
         .starterContainer {
             .starterTitle {
-                font-size: 2.4rem !important;
+                font-size: 1.5rem !important;
             }
     
             .starter {
-                height: 400px !important;
+                height: 240px !important;
             }
         }
     
         .mainCourseContainer {
             .mainCourseTitle {
-                font-size: 2.4rem !important;
+                font-size: 1.5rem !important;
             }
     
             .mainCourse {
-                height: 375px !important;
+                height: 225px !important;
             }
         }
     
         .coctailContainer {
             .coctailTitle {
-                font-size: 2.4rem !important;
+                font-size: 1.5rem !important;
             }
     
             .coctail {
-                height: 400px !important;
+                height: 250px !important;
             }
         }
     }
 
     .arrowRightGallery {
-        height: 82px !important;
+        height: 64px !important;
+    }
+
+    .arrowDownSix {
+        height: 48px !important;
+    }
+}
+
+//                                                         2400px
+
+@media (min-width: 2400px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 1.8rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 2.6rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 1.8rem !important;
+            }
+    
+            .starter {
+                height: 290px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 1.8rem !important;
+            }
+    
+            .mainCourse {
+                height: 275px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 1.8rem !important;
+            }
+    
+            .coctail {
+                height: 300px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 92px !important;
     }
 
     .arrowDownSix {
@@ -518,11 +530,66 @@ $main-color: #69510F;
     .galleryContainer {
         .starterContainer {
             .starterTitle {
+                font-size: 2.6rem !important;
+            }
+    
+            .starter {
+                height: 440px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 2.6rem !important;
+            }
+    
+            .mainCourse {
+                height: 425px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 2.6rem !important;
+            }
+    
+            .coctail {
+                height: 450px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 92px !important;
+    }
+
+    .arrowDownSix {
+        height: 72px !important;
+    }
+}
+
+
+//                                                         3800px
+
+@media (min-width: 3800px) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 3rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 4.2rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
                 font-size: 2.8rem !important;
             }
     
             .starter {
-                height: 475px !important;
+                height: 465px !important;
             }
         }
     
@@ -548,61 +615,7 @@ $main-color: #69510F;
     }
 
     .arrowRightGallery {
-        height: 92px !important;
-    }
-
-    .arrowDownSix {
-        height: 72px !important;
-    }
-}
-
-//                                                         3800px
-
-@media (min-width: 3800px) {
-    .galleryTitle {
-        .gallerySubtitle {
-            font-size: 3.4rem !important;
-        }
-
-        .galleryTitle {
-            font-size: 4.6rem !important;
-        }
-    }
-
-    .galleryContainer {
-        .starterContainer {
-            .starterTitle {
-                font-size: 3.4rem !important;
-            }
-    
-            .starter {
-                height: 550px !important;
-            }
-        }
-    
-        .mainCourseContainer {
-            .mainCourseTitle {
-                font-size: 3.4rem !important;
-            }
-    
-            .mainCourse {
-                height: 525px !important;
-            }
-        }
-    
-        .coctailContainer {
-            .coctailTitle {
-                font-size: 3.4rem !important;
-            }
-    
-            .coctail {
-                height: 550px !important;
-            }
-        }
-    }
-
-    .arrowRightGallery {
-        height: 112px !important;
+        height: 106px !important;
     }
 
     .arrowDownSix {
@@ -636,7 +649,7 @@ $main-color: #69510F;
         .starterContainer {
             .starterTitle {
                 font-size: 0.6rem !important;
-                bottom: 25% !important;
+                bottom: 20% !important;
                 left: 50% !important;
                 transform: translate(-50%, -50%)!important;
             }
@@ -649,7 +662,7 @@ $main-color: #69510F;
         .mainCourseContainer {
             .mainCourseTitle {
                 font-size: 0.6rem !important;
-                bottom: 25% !important;
+                bottom: 20% !important;
                 left: 50% !important;
                 transform: translate(-50%, -50%) !important;
             }
@@ -662,7 +675,7 @@ $main-color: #69510F;
         .coctailContainer {
             .coctailTitle {
                 font-size: 0.6rem !important;
-                bottom: 25% !important;
+                bottom: 20% !important;
                 left: 50% !important;
                 transform: translate(-50%, -50%) !important;
             }
@@ -682,16 +695,70 @@ $main-color: #69510F;
     }
 }
 
-// orientation: landscape 1000px
+// orientation: landscape 600px
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
     .galleryTitle {
         .gallerySubtitle {
-            font-size: 1rem !important;
+            font-size: 0.6rem !important;
         }
 
         .galleryTitle {
-            font-size: 1.4rem !important;
+            font-size: 0.8rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 0.7rem !important;
+            }
+
+            .starter {
+                height: 100px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 0.7rem !important;
+            }
+
+            .mainCourse {
+                height: 95px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 0.7rem !important;
+            }
+
+            .coctail {
+                height: 100px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 32px !important;
+    }
+
+    .arrowDownSix {
+        height: 24px !important;
+    }
+}
+
+// orientation: landscape 800px
+
+@media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: landscape) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 0.8rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 1rem !important;
         }
     }
 
@@ -699,7 +766,58 @@ $main-color: #69510F;
         .starterContainer {
             .starterTitle {
                 font-size: 0.8rem !important;
-                bottom: 20% !important;
+            }
+
+            .starter {
+                height: 125px !important;
+            }
+        }
+    
+        .mainCourseContainer {
+            .mainCourseTitle {
+                font-size: 0.8rem !important;
+            }
+
+            .mainCourse {
+                height: 120px !important;
+            }
+        }
+    
+        .coctailContainer {
+            .coctailTitle {
+                font-size: 0.8rem !important;
+            }
+
+            .coctail {
+                height: 125px !important;
+            }
+        }
+    }
+
+    .arrowRightGallery {
+        height: 32px !important;
+    }
+
+    .arrowDownSix {
+        height: 24px !important;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+    .galleryTitle {
+        .gallerySubtitle {
+            font-size: 0.8rem !important;
+        }
+
+        .galleryTitle {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .galleryContainer {
+        .starterContainer {
+            .starterTitle {
+                font-size: 0.9rem !important;
             }
 
             .starter {
@@ -709,19 +827,17 @@ $main-color: #69510F;
     
         .mainCourseContainer {
             .mainCourseTitle {
-                font-size: 0.8rem !important;
-                bottom: 20% !important;
+                font-size: 0.9rem !important;
             }
 
             .mainCourse {
-                height: 140px !important;
+                height: 145px !important;
             }
         }
     
         .coctailContainer {
             .coctailTitle {
-                font-size: 0.8rem !important;
-                bottom: 20% !important;
+                font-size: 0.9rem !important;
             }
 
             .coctail {
@@ -731,7 +847,7 @@ $main-color: #69510F;
     }
 
     .arrowRightGallery {
-        height: 32px !important;
+        height: 36px !important;
     }
 
     .arrowDownSix {

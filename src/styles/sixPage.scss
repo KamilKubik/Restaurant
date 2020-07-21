@@ -27,7 +27,7 @@ $main-color: #69510F;
                 text-align: center;
                 font-family: 'Rokkitt', serif;
                 font-weight: 400;
-                font-size: 0.9rem;
+                font-size: 0.6rem;
             }
     
             .menuTitle {
@@ -35,14 +35,14 @@ $main-color: #69510F;
                 text-align: center;
                 font-family: 'Rokkitt', serif;
                 font-weight: 400;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
 
     }
 
     .menuContainer {
-        height: 80vh;
+        height: 70vh;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
@@ -61,7 +61,7 @@ $main-color: #69510F;
 
                 .dishName {
                     color: $main-color;
-                    font-size: 0.8rem;
+                    font-size: 0.7rem;
                     display: flex;
                     align-items: center;
                     font-weight: 400;
@@ -77,17 +77,40 @@ $main-color: #69510F;
                 .menuIngredients {
                     font-family: 'Rokkitt', serif;
                     color: whitesmoke;
-                    font-size: 0.6rem;
+                    font-size: 0.5rem;
                     font-weight: 400;
                 }
     
                 .dishPrice {
                     color: $main-color;
-                    font-size: 0.8rem;
+                    font-size: 0.6rem;
                     font-family: 'Rokkitt', serif;
                     font-weight: 400;
                 }
             }
+        }
+    }
+
+    .viewAllContainer {
+        position: relative;
+        height: 10vh;
+        width: 100%;
+
+        .viewAllButton {
+            position: absolute;
+            height: 25px;
+            width: 90px;
+            background-color: black;
+            border: 1px solid $main-color;
+            color: whitesmoke;
+            font-family: 'Rokkitt', serif;
+            font-weight: 400;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            font-size: 0.5rem;
+            letter-spacing: 1px;
         }
     }
 
@@ -97,7 +120,7 @@ $main-color: #69510F;
         width: 100%;
 
         .arrowDownFive {
-            height: 26px;
+            height: 22px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -118,6 +141,64 @@ $main-color: #69510F;
                 }
         
                 .menuTitle {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 0.8rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.6rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 0.7rem !important;
+                }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 35px;
+                width: 110px;
+                font-size: 0.6rem;
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 28px;
+            }
+        }
+    }
+}
+
+//                                                                600px
+
+@media (min-width: 600px) and (orientation: portrait) {
+    .sixPage {
+        position: relative;
+        .rightBar {
+            position: absolute;
+            top: 0;
+            right: 15%;
+            height: 100%;
+            width: 1px;
+            background-color: $main-color;
+        }
+
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 1.2rem !important;
+                }
+        
+                .menuTitle {
                     font-size: 1.4rem !important;
                 }
             }
@@ -126,41 +207,39 @@ $main-color: #69510F;
         .menuGrid {
             .dishContainer {
                 .dishName {
-                    font-size: 1.1rem !important;
-                }
-    
-                .menuIngredients {
-                    font-size: 0.8rem !important;
-                }
-    
-                .dishPrice {
                     font-size: 1rem !important;
                 }
+    
+                .menuIngredients {
+                    font-size: 0.7rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 0.8rem !important;
+                }
+            }
+        }
+
+        
+        .viewAllContainer {
+            .viewAllButton {
+                height: 40px;
+                width: 120px;
             }
         }
 
         .menuArrowDown {
             .arrowDownFive {
-                height: 32px;
+                height: 36px !important;
             }
         }
     }
 }
 
-//                                                                700px
+//                                                                800px
 
-@media (min-width: 700px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: portrait) {
     .sixPage {
-        position: relative;
-        .rightBar {
-            position: absolute;
-            top: 0;
-            right: 15%;
-            height: 100%;
-            width: 1px;
-            background-color: $main-color;
-        }
-
         .menuTitleContainer {
             .menuWrapper {
                 .menuSubtitle {
@@ -189,28 +268,27 @@ $main-color: #69510F;
             }
         }
 
+                
+        .viewAllContainer {
+            .viewAllButton {
+                height: 45px;
+                width: 140px;
+                font-size: 0.7rem;
+            }
+        }
+
         .menuArrowDown {
             .arrowDownFive {
-                height: 36px !important;
+                height: 42px !important;
             }
         }
     }
 }
 
-//                                                                900px
+//                                                                1000px
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) and (orientation: portrait) {
     .sixPage {
-        position: relative;
-        .rightBar {
-            position: absolute;
-            top: 0;
-            right: 15%;
-            height: 100%;
-            width: 1px;
-            background-color: $main-color;
-        }
-
         .menuTitleContainer {
             .menuWrapper {
                 .menuSubtitle {
@@ -218,7 +296,7 @@ $main-color: #69510F;
                 }
         
                 .menuTitle {
-                    font-size: 1.6rem !important;
+                    font-size: 1.8rem !important;
                 }
             }
         }
@@ -226,22 +304,31 @@ $main-color: #69510F;
         .menuGrid {
             .dishContainer {
                 .dishName {
-                    font-size: 1.2rem !important;
+                    font-size: 1.3rem !important;
                 }
     
                 .menuIngredients {
-                    font-size: 0.9rem !important;
+                    font-size: 1rem !important;
                 }
     
                 .dishPrice {
-                    font-size: 1.1rem !important;
+                    font-size: 1.2rem !important;
                 }
+            }
+        }
+
+                
+        .viewAllContainer {
+            .viewAllButton {
+                height: 50px;
+                width: 150px;
+                font-size: 0.8rem;
             }
         }
 
         .menuArrowDown {
             .arrowDownFive {
-                height: 36px !important;
+                height: 46px !important;
             }
         }
     }
@@ -319,7 +406,7 @@ $main-color: #69510F;
                 }
         
                 .menuTitle {
-                    font-size: 1rem !important;
+                    font-size: 0.8rem !important;
                 }
             }
         }
@@ -327,7 +414,7 @@ $main-color: #69510F;
         .menuGrid {
             .dishContainer {
                 .dishName {
-                    font-size: 0.6rem !important;
+                    font-size: 0.5rem !important;
                 }
     
                 .menuIngredients {
@@ -335,14 +422,98 @@ $main-color: #69510F;
                 }
     
                 .dishPrice {
-                    font-size: 0.6rem !important;
+                    font-size: 0.5rem !important;
                 }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 25px;
+                width: 80px;
+                font-size: 0.4rem;
             }
         }
 
         .menuArrowDown {
             .arrowDownFive {
                 height: 22px !important;
+            }
+        }
+    }
+}
+
+// orientation: landscape 600px
+
+@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
+    .sixPage {
+        position: relative;
+        .rightBar {
+            position: absolute;
+            top: 0;
+            right: 15%;
+            height: 100%;
+            width: 1px;
+            background-color: $main-color;
+        }
+
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 0.6rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 0.8rem !important;
+                }
+            }
+        }
+
+        .menuGrid {
+            .dishContainer {
+                .dishName {
+                    font-size: 0.5rem !important;
+                }
+    
+                .menuIngredients {
+                    font-size: 0.4rem !important;
+                }
+    
+                .dishPrice {
+                    font-size: 0.5rem !important;
+                }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 25px;
+                width: 80px;
+                font-size: 0.4rem;
+            }
+        }
+
+        .menuArrowDown {
+            .arrowDownFive {
+                height: 24px !important;
+            }
+        }
+    }
+}
+
+// orientation: landscape 800px
+
+@media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: landscape) {
+    .sixPage {
+        .menuTitleContainer {
+            .menuWrapper {
+                .menuSubtitle {
+                    font-size: 0.8rem !important;
+                }
+        
+                .menuTitle {
+                    font-size: 1rem !important;
+                }
             }
         }
     }
@@ -355,11 +526,11 @@ $main-color: #69510F;
         .menuTitleContainer {
             .menuWrapper {
                 .menuSubtitle {
-                    font-size: 1rem !important;
+                    font-size: 0.8rem !important;
                 }
         
                 .menuTitle {
-                    font-size: 1.4rem !important;
+                    font-size: 1.2rem !important;
                 }
             }
         }
@@ -367,16 +538,24 @@ $main-color: #69510F;
         .menuGrid {
             .dishContainer {
                 .dishName {
-                    font-size: 1rem !important;
-                }
-    
-                .menuIngredients {
                     font-size: 0.6rem !important;
                 }
     
-                .dishPrice {
-                    font-size: 0.8rem !important;
+                .menuIngredients {
+                    font-size: 0.5rem !important;
                 }
+    
+                .dishPrice {
+                    font-size: 0.6rem !important;
+                }
+            }
+        }
+
+        .viewAllContainer {
+            .viewAllButton {
+                height: 30px;
+                width: 100px;
+                font-size: 0.5rem;
             }
         }
 

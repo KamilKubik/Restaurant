@@ -9,6 +9,22 @@ $main-color: #69510F;
 .menuPage {
     background-color: black;
 
+    .menuBarOne {
+        height: 285vh;
+        width: 1px;
+        position: absolute;
+        left: 25%;
+        background-color: $main-color;
+    }
+
+    .menuBarTwo {
+        height: 285vh;
+        width: 1px;
+        position: absolute;
+        right: 25%;
+        background-color: $main-color;
+    }
+
     .menuTitle {
         position: relative;
         height: 15vh;
@@ -277,6 +293,1465 @@ $main-color: #69510F;
                     font-size: 0.5rem;
                     font-family: 'Rokkitt', serif;
                     font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+//                                                                    MEDIA
+
+//                                                                    400px
+
+@media(min-width: 400px) and (orientation: portrait) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 0.8rem;
+                }
+    
+                h1 {
+                    font-size: 1.2rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 26px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 0.6rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.5rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 0.6rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.5rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 0.6rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.5rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//                                                                          600px
+
+@media(min-width: 600px) and (orientation: portrait) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 1rem;
+                }
+    
+                h1 {
+                    font-size: 1.4rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 32px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 0.8rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.6rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 0.8rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.6rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 0.8rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.6rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//                                                                       900px
+
+@media(min-width: 900px) and (orientation: portrait) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 1.2rem;
+                }
+    
+                h1 {
+                    font-size: 1.8rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 42px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//                                                                       1200px
+
+@media(min-width: 1200px) and (orientation: portrait) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 2rem;
+                }
+    
+                h1 {
+                    font-size: 3rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 62px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1.6rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 1.4rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1.6rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 1.4rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1.6rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 1.4rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 0) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            height: 25vh;
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 0.6rem;
+                }
+    
+                h1 {
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 22px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            height: 25vh;
+            h2 {
+                font-size: 0.8rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            height: 65vh;
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 0.5rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.4rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            height: 25vh;
+            h2 {
+                font-size: 0.8rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            height: 105vh;
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 0.5rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.4rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            height: 25vh;
+            h2 {
+                font-size: 0.8rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            height: 65vh;
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 0.5rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.4rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 800px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 0.8rem;
+                }
+    
+                h1 {
+                    font-size: 1.2rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 26px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 0.6rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.5rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 0.6rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.5rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 0.6rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.5rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1000px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 1rem;
+                }
+    
+                h1 {
+                    font-size: 1.6rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 32px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 0.8rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.6rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 0.8rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.6rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 0.8rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.6rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1400px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 1.2rem;
+                }
+    
+                h1 {
+                    font-size: 1.8rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 36px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1600px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 1.4rem;
+                }
+    
+                h1 {
+                    font-size: 2rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 42px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.8rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1800px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 1.6rem;
+                }
+    
+                h1 {
+                    font-size: 2.2rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 46px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1.2rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 0.9rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1.2rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 0.9rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1.2rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 0.9rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 2200px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 1.8rem;
+                }
+    
+                h1 {
+                    font-size: 2.6rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 52px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1.4rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 1rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1.4rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 1rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1.4rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 1rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 2600px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 2rem;
+                }
+    
+                h1 {
+                    font-size: 3rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 64px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1.6rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 1.2rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1.6rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 1.2rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1.6rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 1.2rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 3000px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 2.2rem;
+                }
+    
+                h1 {
+                    font-size: 3.2rem;
+                    letter-spacing: 2px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 72px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 2.4rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 1.8rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 1.4rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 2.4rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 1.8rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 1.4rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 2.4rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 1.8rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 1.4rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 3400px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 2.4rem;
+                }
+    
+                h1 {
+                    font-size: 3.4rem;
+                    letter-spacing: 3px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 76px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 2rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 1.6rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 2rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 1.6rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 2rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 1.6rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 3800px) and (orientation: landscape) {
+    .menuPage {
+        .menuTitle {
+            .menuPageTitleContainer {
+    
+                h2 {
+                    font-size: 2.6rem;
+                }
+    
+                h1 {
+                    font-size: 3.6rem;
+                    letter-spacing: 3px;
+                }
+            }
+    
+            .arrowBackContainer {
+                .arrowBack {
+                    height: 82px;
+                }
+            }
+        }
+    
+        .startersContainer {
+            h2 {
+                font-size: 2.8rem;
+            }
+        }
+    
+        .menuPageStarterContainer {
+            .menuGrid {
+                .dishContainer {
+                    .starterName {
+                        font-size: 2rem;
+                    }
+        
+                    .starterIngredients {
+                        font-size: 1.6rem;
+                    }
+        
+                    .starterPrice {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    
+        .mainDishContainer {
+            h2 {
+                font-size: 2.8rem;
+            }
+        }
+    
+        .menuPageMainDishContainer {
+            .menuGrid {
+                .dishContainer {
+                    .mainDishName {
+                        font-size: 2.2rem;
+                    }
+        
+                    .mainDishIngredients {
+                        font-size: 1.8rem;
+                    }
+        
+                    .mainDishPrice {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+    
+        .coctailsContainer {
+            h2 {
+                font-size: 2.8rem;
+            }
+        }
+    
+        .menuPageCoctailContainer {
+            .menuGrid {
+                .coctailContainer {
+                    .coctailName {
+                        font-size: 2.2rem;
+                    }
+        
+                    .coctailIngredients {
+                        font-size: 1.8rem;
+                    }
+        
+                    .coctailPrice {
+                        font-size: 2.2rem;
+                    }
                 }
             }
         }

@@ -35,7 +35,7 @@ $main-color: #69510F;
     
         .menuElement {
             transform: rotate(270deg);
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             font-family: 'Rokkitt', serif;
             font-weight: 400;
             cursor: pointer;
@@ -58,14 +58,14 @@ $main-color: #69510F;
 
         .title {
             color: white;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-family: 'Bitter', serif;
             font-weight: 400;
         }
     
         .subtitle {
             color: $main-color;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: 400;
 
             display: flex;
@@ -85,7 +85,7 @@ $main-color: #69510F;
     }
 
     .arrowDown {
-        height: 26px;
+        height: 22px;
         position: absolute;
         left: 50%;
         bottom: 0;
@@ -96,82 +96,103 @@ $main-color: #69510F;
 
 //                                                                 400px
 
-@media (min-width: 400px) and (orientation: portrait) {
+@media (min-width: 400px) and (max-width: 1200px) and (orientation: portrait) {
 
     .image {
-
         .menuContainer {
-
             .menuElement {
-                font-size: 1rem !important;
+                font-size: 0.8rem;
             }
         }
 
         .titleBoxer {
-
             .title {
-                font-size: 1.8rem !important;
+                font-size: 1.6rem;
+            }
+
+            .subtitle {
+                font-size: 0.8rem;
             }
         }
 
         .arrowDown {
-            height: 32px !important;
+            height: 28px;
         }
     }
 }
 
 //                                                                 700px
 
-@media (min-width: 700px) and (orientation: portrait) {
+@media (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
     .image {
         .menuContainer {
             .menuElement {
-                font-size: 1.4rem !important;
+                font-size: 1.2rem;
             }
         }
 
         .titleBoxer {
-            bottom: 20% !important;
-
             .title {
-                font-size: 2.4rem !important;
+                font-size: 2rem;
             }
 
             .subtitle {
-                font-size: 1.2rem !important;
+                font-size: 1.2rem;
             }
         }
 
         .arrowDown {
-            height: 36px !important;
+            height: 36px;
         }
     }
 }
 
-//                                                                900px
+//                                                                800px
 
-@media (min-width: 900px) {
+@media (min-width: 800px) and (max-width: 1200px) and (orientation: portrait) {
     .image {
         .menuContainer {
             .menuElement {
-                font-size: 1.2rem !important;
+                font-size: 1.3rem;
             }
         }
 
         .titleBoxer {
-            bottom: 20% !important;
-
             .title {
-                font-size: 2.2rem !important;
+                font-size: 2.8rem;
             }
 
             .subtitle {
-                font-size: 1rem !important;
+                font-size: 1.6rem;
             }
         }
 
         .arrowDown {
-            height: 36px !important;
+            height: 42px;
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) and (orientation: portrait) {
+    .image {
+        .menuContainer {
+            .menuElement {
+                font-size: 1.4rem;
+            }
+        }
+
+        .titleBoxer {
+            .title {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.6rem;
+            }
+        }
+
+        .arrowDown {
+            height: 46px;
         }
     }
 }
@@ -191,32 +212,32 @@ $main-color: #69510F;
 
             .menuContainer {
                 height: 100vh;
-                width: 15% !important;
+                width: 15%;
                 top: 0;
                 background-color: whitesmoke;
                 color: black;
 
                 .menuElement {
-                    font-size: 1.2rem !important;
+                    font-size: 1rem;
                 }
             }
         }
 
         .bigContainer {
-            opacity: 1 !important;
+            opacity: 1;
             visibility: visible;
-            height: 100vh !important;
-            width: 85% !important;
+            height: 100vh;
+            width: 85%;
             position: absolute;
-            left: 15% !important;
+            left: 15%;
             text-align: center;
 
             .menuContainerText {
                 opacity: 1;
                 visibility: visible;
                 color: whitesmoke;
-                position: absolute !important;
-                top: 50% !important;
+                position: absolute;
+                top: 50%;
                 margin-left: 5%;
                 margin-right: 5%;
                 font-size: 1rem;
@@ -235,14 +256,14 @@ $main-color: #69510F;
     
             .titleTwo {
                 color: white;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 font-family: 'Bitter', serif;
                 font-weight: 400;
             }
         
             .subtitleTwo {
                 color: $main-color;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: 400;
     
                 display: flex;
@@ -270,7 +291,7 @@ $main-color: #69510F;
 
 
     .arrowDown {
-        height: 42px !important;
+        height: 36px !important;
     }
 }
 
@@ -280,38 +301,39 @@ $main-color: #69510F;
     .image {
         .menuGridContainer {
             .menuContainer {
-                width: 15% !important;
+                width: 15%;
                 .menuElement {
-                    font-size: 1.4rem !important;
+                    font-size: 1.2rem
                 }
             }
         }
 
         .bigContainer {
             .titleBoxerTwo {
-                bottom: 20% !important;
+                bottom: 20%;
     
                 .titleTwo {
-                    font-size: 2.6rem !important;
+                    font-size: 2.4rem;
                 }
     
                 .subtitleTwo {
-                    font-size: 1.6rem !important;
+                    font-size: 1.4rem;
                 }
             }
         }
 
         .menuContainerText {
             top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
             margin-left: unset !important;
             margin-right: unset !important;
             font-size: 1.2rem !important;
+            width: 65%;
         }
 
         .arrowDown {
-            height: 52px !important;
+            height: 42px !important;
         }
     }
 }
@@ -320,56 +342,52 @@ $main-color: #69510F;
 
 @media (min-width: 1900px) {
     .image {
-        .menuGridContainer {
-            .menuContainer {
-                .menuElement {
-                    font-size: 1.2rem !important;
-                }
-            }
-        }
-
         .titleBoxerTwo {
             .titleTwo {
-                font-size: 2.8rem !important;
+                font-size: 2.6rem !important;
+            }
+
+            .subtitleTwo {
+                font-size: 1.6rem !important;
             }
         }
 
         .menuContainerText {
-            font-size: 1.2rem !important;
+            font-size: 1.3rem !important;
         }
 
         .arrowDown {
-            height: 56px !important;
+            height: 48px !important;
         }
     }
 }
 
-//                                                                        2600px
+//                                                                        2400px
 
 
-@media (min-width: 2600px) {
+@media (min-width: 2400px) {
     .image {
         .menuGridContainer {
             .menuContainer {
-                width: 10% !important;
+                width: 10%;
                 .menuElement {
-                    font-size: 1.6rem !important;
+                    font-size: 1.4rem;
                 }
             }
         }
 
         .bigContainer {
-            width: 90% !important;
-            left: 10% !important;
+            width: 90%;
+            left: 10%;
             .titleBoxerTwo {
-                bottom: 20% !important;
+                bottom: 20%;
     
                 .titleTwo {
-                    font-size: 3rem !important;
+                    font-size: 3.2rem !important;
                 }
     
                 .subtitleTwo {
-                    font-size: 2rem !important;
+                    font-size: 1.8rem !important;
                 }
 
                 .subtitleTwo:after, .subtitleTwo:before {
@@ -379,8 +397,8 @@ $main-color: #69510F;
         }
 
         .menuContainerText {
-            width: 60% !important;
-            font-size: 1.6rem !important;
+            width: 60%;
+            font-size: 1.7rem !important;
         }
 
         .arrowDown {
@@ -397,7 +415,7 @@ $main-color: #69510F;
         .menuGridContainer {
             .menuContainer {
                 .menuElement {
-                    font-size: 2rem !important;
+                    font-size: 1.6rem;
                 }
             }
         }
@@ -405,22 +423,22 @@ $main-color: #69510F;
         .bigContainer {
             .titleBoxerTwo {
                 .titleTwo {
-                    font-size: 3.8rem !important;
+                    font-size: 3.4rem !important;
                 }
     
                 .subtitleTwo {
-                    font-size: 2.6rem !important;
+                    font-size: 2rem !important;
                 }
             }
         }
 
         .menuContainerText {
-            width: 60% !important;
+            width: 60%;
             font-size: 1.8rem !important;
         }
 
         .arrowDown {
-            height: 72px !important;
+            height: 72px;
         }
     }
 }
@@ -433,7 +451,7 @@ $main-color: #69510F;
         .menuGridContainer {
             .menuContainer {
                 .menuElement {
-                    font-size: 2.6rem !important;
+                    font-size: 1.8rem !important;
                 }
             }
         }
@@ -441,18 +459,18 @@ $main-color: #69510F;
         .bigContainer {
             .titleBoxerTwo {
                 .titleTwo {
-                    font-size: 4.2rem !important;
+                    font-size: 4.4rem !important;
                 }
     
                 .subtitleTwo {
-                    font-size: 2.8rem !important;
+                    font-size: 2.6rem !important;
                 }
             }
         }
 
         .menuContainerText {
-            width: 65% !important;
-            font-size: 2.3rem !important;
+            width: 65%;
+            font-size: 2.2rem !important;
         }
 
         .arrowDown {
@@ -466,34 +484,80 @@ $main-color: #69510F;
 @media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
     .image {
         .menuContainer {
-            width: 15% !important;
+            width: 15%;
 
             .menuElement {
-                font-size: 0.6rem !important;
+                font-size: 0.5rem;
             }
         }
 
         .bigContainer {
-            height: 0 !important;
-            width: 0 !important;
-            opacity: 0 !important;
-            visibility: hidden !important;
+            height: 0;
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
         }
 
         .titleBoxer {
-            bottom: 20% !important;
+            bottom: 20%;
 
             .title {
-                font-size: 1.2rem !important;
+                font-size: 1.2rem;
             }
 
             .subtitle {
-                font-size: 0.8rem !important;
+                font-size: 0.8rem;
             }
         }
 
         .arrowDown {
-            height: 22px !important;
+            height: 22px;
+        }
+    }
+}
+
+// orientation: landscape 600px
+
+@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
+    .image {
+        .menuContainer {
+            width: 10%;
+            .menuElement {
+                font-size: 0.6rem;
+            }
+        }
+
+        .titleBoxer {
+            .title {
+                font-size: 1.4rem;
+            }
+
+            .subtitle {
+                font-size: 0.8rem;
+            }
+        }
+
+        .arrowDown {
+            height: 24px;
+        }
+    }
+}
+
+// orientation: landscape 800px
+
+@media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: landscape) {
+    .image {
+        .menuContainer {
+            width: 10%;
+            .menuElement {
+                font-size: 0.7rem;
+            }
+        }
+
+        .titleBoxer {
+            .title {
+                font-size: 1.6rem;
+            }
         }
     }
 }
@@ -503,28 +567,23 @@ $main-color: #69510F;
 @media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
     .image {
         .menuContainer {
-            width: 10% !important;
-        }
-
-        .bigContainer {
-            height: 0 !important;
-            width: 0 !important;
-            opacity: 0 !important;
-            visibility: hidden !important;
+            .menuElement {
+                font-size: 0.8rem;
+            }
         }
 
         .titleBoxer {
             .title {
-                font-size: 1.6rem !important;
+                font-size: 1.8rem;
             }
 
             .subtitle {
-                font-size: 1rem !important;
+                font-size: 1rem;
             }
         }
 
         .arrowDown {
-            height: 26px !important;
+            height: 26px;
         }
     }
 }

@@ -4,6 +4,7 @@ import MainDish from './MainDish';
 import MenuCoctails from './MenuCoctails';
 import ContactPage from '../contactPage/ContactPage';
 import arrowBack from '../../svg/arrowLeftSvg.svg';
+import { Link } from 'react-router-dom';
 
 
 const MenuData = () => {
@@ -11,9 +12,13 @@ const MenuData = () => {
     return (
         <>
         <div className='menuPage'>
+
+            {/* <div className='menuBarOne'></div>
+            <div className='menuBarTwo'></div> */}
+
             <div className='menuTitle'>
                 <div className='arrowBackContainer'>
-                    <img className='arrowBack' src={arrowBack}></img>
+                    <Link to='/'><img className='arrowBack' src={arrowBack}></img></Link>
                 </div>
                 <div className='menuPageTitleContainer'>
                     <h2>Try it all</h2>

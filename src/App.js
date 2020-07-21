@@ -22,15 +22,13 @@ import './styles/MenuPage.scss';
 
 function App() {
   return (
-    // <GalleryPage />
-    // <MenuPage />
-    <MenuData />
-    // <Router>
-    //   <Switch>
-    //     <Route exact path='/' component={Container}></Route>
-    //     <Route path='/gallery' component={GalleryPage}></Route>
-    //   </Switch>
-    // </Router>
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Container}></Route>
+        <Route path='/gallery' component={GalleryPage}></Route>
+        <Route path='/menu' component={MenuData}></Route>
+      </Switch>
+    </Router>
   );
 }
 

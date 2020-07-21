@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ArrowDownFour from './ArrowDownFour';
 import ArrowRight from './ArrowRight';
 import ArrowLeft from './ArrowLeft';
-import gsap, { TweenMax, TweenLite } from 'gsap';
+import gsap, { TweenMax, TweenLite, Power0 } from 'gsap';
 import $ from 'jquery';
 
 const FivePage = () => {
@@ -48,105 +48,93 @@ const FivePage = () => {
 
 
             // DWA
-            // if(($('#subtitle') && $('#opinion') && $('#name')).hasClass('active'))
             if(($('#subtitle') && $('#opinion') && $('#name')).hasClass('active')) {
-            // this.setState({isActive1: false, isActive2: true, count: 2})
-            console.log('It works');
-            setIsActive1(false);
-            setIsActive2(true);
-            setCount(2);
-            TweenLite.to(subtitle, 1, {autoAlpha: 0});
-            TweenLite.to(opinion, 1, {autoAlpha: 0});
-            TweenLite.to(name, 1, {autoAlpha: 0});
-            TweenLite.to(subtitleTwo, 1, {autoAlpha: 1}, 1);
-            TweenLite.to(opinionTwo, 1, {autoAlpha: 1}, 1);
-            TweenLite.to(nameTwo, 1, {autoAlpha: 1}, 1);
-        }
+                setIsActive1(false);
+                setIsActive2(true);
+                setCount(2);
+                TweenLite.to(subtitle, 2, {autoAlpha: 0, ease: Power0});
+                TweenLite.to(opinion, 2, {autoAlpha: 0, ease: Power0});
+                TweenLite.to(name, 2, {autoAlpha: 0, ease: Power0});
+                TweenLite.to(subtitleTwo, 2, {autoAlpha: 1, ease: Power0}, 1);
+                TweenLite.to(opinionTwo, 2, {autoAlpha: 1, ease: Power0}, 1);
+                TweenLite.to(nameTwo, 2, {autoAlpha: 1, ease: Power0}, 1);
+            }
 
             // CZTERY
-        else if(($('#subtitleThree') && $('#opinionThree') && $('#nameThree')).hasClass('active')) {
-            // this.setState({isActive1: false, isActive2: false, isActive3: false, isActive4: true, count: 4})
-            setIsActive1(false);
-            setIsActive2(false);
-            setIsActive3(false);
-            setIsActive4(true);
-            setCount(4);
-            TweenLite.to(subtitleThree, 1, {autoAlpha: 0})
-            TweenLite.to(opinionThree, 1, {autoAlpha: 0})
-            TweenLite.to(nameThree, 1, {autoAlpha: 0})
-            TweenLite.to(subtitleFour, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinionFour, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(nameFour, 1, {autoAlpha: 1}, 1)
-        }
+            else if(($('#subtitleThree') && $('#opinionThree') && $('#nameThree')).hasClass('active')) {
+                setIsActive1(false);
+                setIsActive2(false);
+                setIsActive3(false);
+                setIsActive4(true);
+                setCount(4);
+                TweenLite.to(subtitleThree, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(opinionThree, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(nameThree, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(subtitleFour, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(opinionFour, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(nameFour, 2, {autoAlpha: 1, ease: Power0}, 1)
+            }
 
             // PIĘć
-        else if(($('#subtitleFour') && $('#opinionFour') && $('#nameFour')).hasClass('active')) {
-            // this.setState({isActive1: false, isActive2: false, isActive3: false, isActive4: false, isActive5: true, count: 5})
-            setIsActive1(false);
-            setIsActive2(false);
-            setIsActive3(false);
-            setIsActive4(false);
-            setIsActive5(true);
-            setCount(5);
-            TweenLite.to(subtitleFour, 1, {autoAlpha: 0})
-            TweenLite.to(opinionFour, 1, {autoAlpha: 0})
-            TweenLite.to(nameFour, 1, {autoAlpha: 0})
-            TweenLite.to(subtitleFive, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinionFive, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(nameFive, 1, {autoAlpha: 1}, 1)
-        }
+            else if(($('#subtitleFour') && $('#opinionFour') && $('#nameFour')).hasClass('active')) {
+                setIsActive1(false);
+                setIsActive2(false);
+                setIsActive3(false);
+                setIsActive4(false);
+                setIsActive5(true);
+                setCount(5);
+                TweenLite.to(subtitleFour, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(opinionFour, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(nameFour, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(subtitleFive, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(opinionFive, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(nameFive, 2, {autoAlpha: 1, ease: Power0}, 1)
+            }
 
             // SZEŚĆ
-        else if(($('#subtitleFive') && $('#opinionFive') && $('#nameFive')).hasClass('active')) {
-            // this.setState({isActive1: true, isActive2: false, isActive3: false, isActive4: false, isActive5: false, count: 1})
-            setIsActive1(true);
-            setIsActive2(false);
-            setIsActive3(false);
-            setIsActive4(false);
-            setIsActive5(false);
-            setCount(1);
-            TweenLite.to(subtitleFive, 1, {autoAlpha: 0})
-            TweenLite.to(opinionFive, 1, {autoAlpha: 0})
-            TweenLite.to(nameFive, 1, {autoAlpha: 0})
-            TweenLite.to(subtitle, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinion, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(name, 1, {autoAlpha: 1}, 1)
-        }
+            else if(($('#subtitleFive') && $('#opinionFive') && $('#nameFive')).hasClass('active')) {
+                setIsActive1(true);
+                setIsActive2(false);
+                setIsActive3(false);
+                setIsActive4(false);
+                setIsActive5(false);
+                setCount(1);
+                TweenLite.to(subtitleFive, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(opinionFive, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(nameFive, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(subtitle, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(opinion, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(name, 2, {autoAlpha: 1, ease: Power0}, 1)
+            }
 
             // JEDEN
-        else if(($('#subtitleTwo') && $('#opinionTwo') && $('#nameTwo')).hasClass('nonActive')) {
-            // this.setState({isActive1: true, isActive2: false, count: 1})
-            setIsActive1(true);
-            setIsActive2(false);
-            setCount(1);
-            TweenLite.to(subtitleTwo, 1, {autoAlpha: 0})
-            TweenLite.to(opinionTwo, 1, {autoAlpha: 0})
-            TweenLite.to(nameTwo, 1, {autoAlpha: 0})
-            TweenLite.to(subtitle, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinion, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(name, 1, {autoAlpha: 1}, 1)
-        }
+            else if(($('#subtitleTwo') && $('#opinionTwo') && $('#nameTwo')).hasClass('nonActive')) {
+                setIsActive1(true);
+                setIsActive2(false);
+                setCount(1);
+                TweenLite.to(subtitleTwo, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(opinionTwo, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(nameTwo, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(subtitle, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(opinion, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(name, 2, {autoAlpha: 1, ease: Power0}, 1)
+            }
 
             // TRZY
-        else if(($('#subtitleTwo') && $('#opinionTwo') && $('#nameTwo')).hasClass('active')) {
-            // this.setState({isActive1: false, isActive2: false, isActive3: true, count: 3})
-            setIsActive1(false);
-            setIsActive2(false);
-            setIsActive3(true);
-            setCount(3);
-            TweenLite.to(subtitleTwo, 1, {autoAlpha: 0})
-            TweenLite.to(opinionTwo, 1, {autoAlpha: 0})
-            TweenLite.to(nameTwo, 1, {autoAlpha: 0})
-            TweenLite.to(subtitleThree, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinionThree, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(nameThree, 1, {autoAlpha: 1}, 1)
+            else if(($('#subtitleTwo') && $('#opinionTwo') && $('#nameTwo')).hasClass('active')) {
+                setIsActive1(false);
+                setIsActive2(false);
+                setIsActive3(true);
+                setCount(3);
+                TweenLite.to(subtitleTwo, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(opinionTwo, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(nameTwo, 2, {autoAlpha: 0, ease: Power0})
+                TweenLite.to(subtitleThree, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(opinionThree, 2, {autoAlpha: 1, ease: Power0}, 1)
+                TweenLite.to(nameThree, 2, {autoAlpha: 1, ease: Power0}, 1)
 
-        }
+            }
     }
-
-    // useEffect(() => {
-    //     nextSlide();
-    // })
 
 
         const prevSlide = () => {
@@ -154,76 +142,71 @@ const FivePage = () => {
 
             // DWA
         if(($('#subtitleTwo') && $('#opinionTwo') && $('#nameTwo')).hasClass('active')){
-            // this.setState({isActive2: false, isActive1: true, count: 1})
             setIsActive2(false);
             setIsActive1(true);
             setCount(1);
-            TweenLite.to(subtitleTwo, 1, {autoAlpha: 0})
-            TweenLite.to(opinionTwo, 1, {autoAlpha: 0})
-            TweenLite.to(nameTwo, 1, {autoAlpha: 0})
-            TweenLite.to(subtitle, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinion, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(name, 1, {autoAlpha: 1}, 1)
+            TweenLite.to(subtitleTwo, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(opinionTwo, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(nameTwo, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(subtitle, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(opinion, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(name, 2, {autoAlpha: 1, ease: Power0}, 1)
         }
 
 
             // TRZY
         else if(($('#subtitle') && $('#opinion') && $('#name')).hasClass('active')){
-            // this.setState({isActive1: false, isActive5: true, count: 5})
             setIsActive1(false);
             setIsActive5(true);
             setCount(5);
-            TweenLite.to(subtitle, 1, {autoAlpha: 0})
-            TweenLite.to(opinion, 1, {autoAlpha: 0})
-            TweenLite.to(name, 1, {autoAlpha: 0})
-            TweenLite.to(subtitleFive, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinionFive, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(nameFive, 1, {autoAlpha: 1}, 1)
+            TweenLite.to(subtitle, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(opinion, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(name, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(subtitleFive, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(opinionFive, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(nameFive, 2, {autoAlpha: 1, ease: Power0}, 1)
         }
 
 
             // CZTERY
         else if(($('#subtitleThree') && $('#opinionThree') && $('#nameThree')).hasClass('active')){
-            // this.setState({isActive3: false, isActive2: true, count: 2})
             setIsActive3(false);
             setIsActive2(true);
             setCount(2);
-            TweenLite.to(subtitleThree, 1, {autoAlpha: 0})
-            TweenLite.to(opinionThree, 1, {autoAlpha: 0})
-            TweenLite.to(nameThree, 1, {autoAlpha: 0})
-            TweenLite.to(subtitleTwo, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinionTwo, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(nameTwo, 1, {autoAlpha: 1}, 1)
+            TweenLite.to(subtitleThree, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(opinionThree, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(nameThree, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(subtitleTwo, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(opinionTwo, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(nameTwo, 2, {autoAlpha: 1, ease: Power0}, 1)
         }
 
 
             // PIĘĆ
         else if(($('#subtitleFour') && $('#opinionFour') && $('#nameFour')).hasClass('active')){
-            // this.setState({isActive4: false, isActive3: true, count: 3})
             setIsActive4(false);
             setIsActive3(true);
             setCount(3);
-            TweenLite.to(subtitleFour, 1, {autoAlpha: 0})
-            TweenLite.to(opinionFour, 1, {autoAlpha: 0})
-            TweenLite.to(nameFour, 1, {autoAlpha: 0})
-            TweenLite.to(subtitleThree, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinionThree, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(nameThree, 1, {autoAlpha: 1}, 1)
+            TweenLite.to(subtitleFour, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(opinionFour, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(nameFour, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(subtitleThree, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(opinionThree, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(nameThree, 2, {autoAlpha: 1, ease: Power0}, 1)
         }
 
 
             // SZEŚĆ
         else if(($('#subtitleFive') && $('#opinionFive') && $('#nameFive')).hasClass('active')){
-            // this.setState({isActive5: false, isActive4: true, count: 4})
             setIsActive5(false);
             setIsActive4(true);
             setCount(4);
-            TweenLite.to(subtitleFive, 1, {autoAlpha: 0})
-            TweenLite.to(opinionFive, 1, {autoAlpha: 0})
-            TweenLite.to(nameFive, 1, {autoAlpha: 0})
-            TweenLite.to(subtitleFour, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(opinionFour, 1, {autoAlpha: 1}, 1)
-            TweenLite.to(nameFour, 1, {autoAlpha: 1}, 1)
+            TweenLite.to(subtitleFive, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(opinionFive, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(nameFive, 2, {autoAlpha: 0, ease: Power0})
+            TweenLite.to(subtitleFour, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(opinionFour, 2, {autoAlpha: 1, ease: Power0}, 1)
+            TweenLite.to(nameFour, 2, {autoAlpha: 1, ease: Power0}, 1)
         }
 
     }

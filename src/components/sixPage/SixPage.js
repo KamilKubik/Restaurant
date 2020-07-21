@@ -43,6 +43,9 @@ const SixPage = () => {
                     )
                 }) : null}
             </div>
+            <div className='viewAllContainer'>
+                <button className='viewAllButton'>VIEW ALL</button>
+            </div>
             <div className='menuArrowDown'>
                 <ArrowDownFive></ArrowDownFive>
             </div>

@@ -13,7 +13,7 @@
     .secondPageText {
         width: 80%;
         color: white;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -27,7 +27,7 @@
     }
 
     .arrowDownTwo {
-        height: 26px;
+        height: 22px;
         position: absolute;
         left: 50%;
         bottom: 0;
@@ -38,22 +38,22 @@
 
 //                                                                400px
 
-@media (min-width: 400px) and (orientation: portrait) {
+@media (min-width: 400px) and (max-width: 1200px) and (orientation: portrait) {
     .secondPage {
         .secondPageText {
             width: 90%;
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
 
         .arrowDownTwo {
-            height: 32px;
+            height: 28px;
         }
     }
 }
 
-//                                                                700px
+//                                                                600px
 
-@media (min-width: 700px) and (orientation: portrait) {
+@media (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
     .secondPage {
         .secondPageText {
             width: 70%;
@@ -66,20 +66,46 @@
     }
 }
 
-//                                                                900px
+//                                                                800px
 
-@media (min-width: 900px) {
+@media (min-width: 800px) and (max-width: 1200px) and (orientation: portrait) {
     .secondPage {
         .secondPageText {
             width: 70%;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         .arrowDownTwo {
-            height: 36px !important;
+            height: 42px !important;
         }
     }
 }
+
+@media (min-width: 1000px) and (max-width: 1200px) and (orientation: portrait) {
+    .secondPage {
+        .secondPageText {
+            width: 70%;
+            font-size: 1.6rem;
+        }
+
+        .arrowDownTwo {
+            height: 46px !important;
+        }
+    }
+}
+
+// @media (min-width: 1200px) and (orientation: portrait) {
+//     .secondPage {
+//         .secondPageText {
+//             width: 70%;
+//             font-size: 1.2rem;
+//         }
+
+//         .arrowDownTwo {
+//             height: 36px !important;
+//         }
+//     }
+// }
 
 //                                                               1200px
 
@@ -91,13 +117,15 @@
         }
 
         .secondPageTextTwo {
-            width: 80%;
-            color: white;
-            font-size: 1.4rem;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            opacity: 1 !important;
+            visibility: visible !important;
+            width: 80% !important;
+            color: white !important;
+            font-size: 1.2rem !important;
+            position: absolute !important;
+            left: 50% !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%) !important;
             text-align: center;
             font-family: 'Noto Sans', sans-serif;
             
@@ -107,21 +135,21 @@
         }
 
         .arrowDownTwo {
-            height: 42px !important;
+            height: 36px !important;
         }
     }
 }
 
 //                                                               1600px
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
     .secondPage {
         .secondPageTextTwo {
-            font-size: 1.6rem;
+            font-size: 1.4rem !important;
         }
 
         .arrowDownTwo {
-            height: 52px !important;
+            height: 42px !important;
         }
     }
 }
@@ -131,21 +159,21 @@
 @media (min-width: 1900px) {
     .secondPage {
         .secondPageTextTwo {
-            font-size: 1.8rem;
+            font-size: 1.6rem !important;
         }
 
         .arrowDownTwo {
-            height: 56px !important;
+            height: 48px !important;
         }
     }
 }
 
-//                                                               2600px
+//                                                               2400px
 
-@media (min-width: 2600px) {
+@media (min-width: 2400px) {
     .secondPage {
         .secondPageTextTwo {
-            font-size: 2.2rem;
+            font-size: 2rem !important;
         }
 
         .arrowDownTwo {
@@ -159,7 +187,7 @@
 @media (min-width: 3200px) {
     .secondPage {
         .secondPageTextTwo {
-            font-size: 2.6rem;
+            font-size: 2.2rem !important;
         }
 
         .arrowDownTwo {
@@ -173,7 +201,7 @@
 @media (min-width: 3800px) {
     .secondPage {
         .secondPageTextTwo {
-            font-size: 3.4rem;
+            font-size: 2.4rem;
         }
 
         .arrowDownTwo {
@@ -182,9 +210,9 @@
     }
 }
 
-// orientation: landscape
+// orientation: landscape 400px
 
-@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 400px) and (orientation: landscape) {
     .secondPage {
         .secondPageTextTwo {
             height: 0;
@@ -194,8 +222,8 @@
         }
 
         .secondPageText {
-            width: 65%;
-            font-size: 0.7rem;
+            width: 50%;
+            font-size: 0.6rem !important;
         }
 
         .arrowDownTwo {
@@ -204,9 +232,37 @@
     }
 }
 
+// orientation landscape 600px
+
+@media (min-width: 600px) and (orientation: landscape) {
+    .secondPage {
+        .secondPageText {
+            font-size: 0.7rem !important;
+        }
+
+        .arrowDownTwo {
+            height: 24px;
+        }
+    }
+}
+
+// orientation landscape 800px
+
+@media (min-width: 800px) and (orientation: landscape) {
+    .secondPage {
+        .secondPageText {
+            font-size: 0.8rem !important;
+        }
+
+        .arrowDownTwo {
+            height: 24px;
+        }
+    }
+}
+
 // orientation: landscape 1000px
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 1000px) and (orientation: landscape) {
     .secondPage {
         .secondPageText {
             font-size: 1rem;

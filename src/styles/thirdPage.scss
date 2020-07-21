@@ -25,7 +25,7 @@ $main-color: #69510F;
 
 
             img {
-                height: 64px;
+                height: 52px;
                 display: block;
                 margin: 0 auto;
             }
@@ -33,14 +33,19 @@ $main-color: #69510F;
             h1 {
                 text-align: center;
                 color: $main-color;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 padding: 5%;
+                font-family: 'Bitter', serif;
+                font-weight: 400;
+                letter-spacing: 1px;
             }
     
             p {
                 color: whitesmoke;
                 text-align: center;
-                font-size: 0.7rem;
+                font-size: 0.6rem;
+                font-family: 'Bitter', serif;
+                font-weight: 400;
             }
         }
     }
@@ -56,7 +61,7 @@ $main-color: #69510F;
 
 
             img {
-                height: 64px;
+                height: 52px;
                 display: block;
                 margin: 0 auto;
             }
@@ -64,14 +69,19 @@ $main-color: #69510F;
             h1 {
                 text-align: center;
                 color: $main-color;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 padding: 5%;
+                font-family: 'Bitter', serif;
+                font-weight: 400;
+                letter-spacing: 1px;
             }
     
             p {
                 color: whitesmoke;
                 text-align: center;
-                font-size: 0.7rem;
+                font-size: 0.6rem;
+                font-family: 'Bitter', serif;
+                font-weight: 400;
             }
         }
     }
@@ -79,17 +89,55 @@ $main-color: #69510F;
 
 //                                           400px
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (orientation: portrait) {
     .thirdPage {
         .containerOne{
             .containerInsideOne {
                 img {
-                    height: 80px;
+                    height: 52px;
+                }
+
+                h1 {
+                    font-size: 0.8rem;
+                }
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+
+        .containerTwo{
+            .containerInsideTwo {
+                img {
+                    height: 52px;
+                }
+
+                h1 {
+                    font-size: 0.8rem;
+                }
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+//                                                          600px
+
+
+@media (min-width: 600px) and (orientation: portrait) {
+    .thirdPage {
+        .containerOne{
+            .containerInsideOne {
+                img {
+                    height: 82px;
                 }
 
                 h1 {
                     font-size: 1.2rem;
-                    font-weight: 400;
                 }
 
                 p {
@@ -101,12 +149,11 @@ $main-color: #69510F;
         .containerTwo{
             .containerInsideTwo {
                 img {
-                    height: 80px;
+                    height: 82px;
                 }
 
                 h1 {
                     font-size: 1.2rem;
-                    font-weight: 400;
                 }
 
                 p {
@@ -117,10 +164,10 @@ $main-color: #69510F;
     }
 }
 
-//                                                          700px
+//                                                          800px
 
 
-@media (min-width: 700px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: portrait) {
     .thirdPage {
         .containerOne{
             .containerInsideOne {
@@ -134,6 +181,8 @@ $main-color: #69510F;
 
                 p {
                     font-size: 1rem;
+                    width: 75%;
+                    transform: translateX(17.5%);
                 }
             }
         }
@@ -150,45 +199,8 @@ $main-color: #69510F;
 
                 p {
                     font-size: 1rem;
-                }
-            }
-        }
-    }
-}
-
-//                                                          900px
-
-
-@media (min-width: 900px) {
-    .thirdPage {
-        .containerOne{
-            .containerInsideOne {
-                img {
-                    height: 96px;
-                }
-
-                h1 {
-                    font-size: 1.4rem;
-                }
-
-                p {
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        .containerTwo{
-            .containerInsideTwo {
-                img {
-                    height: 96px;
-                }
-
-                h1 {
-                    font-size: 1.4rem;
-                }
-
-                p {
-                    font-size: 1rem;
+                    width: 75%;
+                    transform: translateX(17.5%);
                 }
             }
         }
@@ -200,6 +212,42 @@ $main-color: #69510F;
 @media (min-width: 1200px) {
     .thirdPage {
         width: 50% !important;
+
+        .containerOne {
+            .containerInsideOne {
+                img {
+                    height: 82px;
+                }
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    width: 75%;
+                    transform: translateX(17.5%);
+                }
+            }
+        }
+
+        .containerTwo {
+            .containerInsideTwo {
+                img {
+                    height: 82px
+                }
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    width: 75%;
+                    transform: translateX(17.5%);
+                }
+            }
+        }
 
         .barOne {
             position: absolute;
@@ -232,7 +280,17 @@ $main-color: #69510F;
         .containerOne {
             .containerInsideOne {
                 img {
-                    height: 112px !important;
+                    height: 92px;
+                }
+
+                h1 {
+                    font-size: 1.4rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    width: 75%;
+                    transform: translateX(17.5%);
                 }
             }
         }
@@ -240,7 +298,17 @@ $main-color: #69510F;
         .containerTwo {
             .containerInsideTwo {
                 img {
-                    height: 112px !important;
+                    height: 92px
+                }
+
+                h1 {
+                    font-size: 1.4rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    width: 75%;
+                    transform: translateX(17.5%);
                 }
             }
         }
@@ -254,15 +322,15 @@ $main-color: #69510F;
         .containerOne {
             .containerInsideOne {
                 img {
-                    height: 136px !important;
+                    height: 136px;
                 }
 
                 h1 {
-                    font-size: 1.6rem !important;
+                    font-size: 1.6rem;
                 }
 
                 p {
-                    font-size: 1.2rem !important;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -270,15 +338,15 @@ $main-color: #69510F;
         .containerTwo {
             .containerInsideTwo {
                 img {
-                    height: 136px !important;
+                    height: 136px;
                 }
 
                 h1 {
-                    font-size: 1.6rem !important;
+                    font-size: 1.6rem;
                 }
 
                 p {
-                    font-size: 1.2rem !important;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -292,15 +360,15 @@ $main-color: #69510F;
         .containerOne {
             .containerInsideOne {
                 img {
-                    height: 142px !important;
+                    height: 142px;
                 }
 
                 h1 {
-                    font-size: 2rem !important;
+                    font-size: 2rem;
                 }
 
                 p {
-                    font-size: 1.5rem !important;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -308,15 +376,15 @@ $main-color: #69510F;
         .containerTwo {
             .containerInsideTwo {
                 img {
-                    height: 142px !important;
+                    height: 142px;
                 }
 
                 h1 {
-                    font-size: 2rem !important;
+                    font-size: 2rem;
                 }
 
                 p {
-                    font-size: 1.5rem !important;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -330,15 +398,15 @@ $main-color: #69510F;
         .containerOne {
             .containerInsideOne {
                 img {
-                    height: 192px !important;
+                    height: 192px;
                 }
 
                 h1 {
-                    font-size: 2.6rem !important;
+                    font-size: 2.6rem;
                 }
 
                 p {
-                    font-size: 1.8rem !important;
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -346,15 +414,15 @@ $main-color: #69510F;
         .containerTwo {
             .containerInsideTwo {
                 img {
-                    height: 192px !important;
+                    height: 192px;
                 }
 
                 h1 {
-                    font-size: 2.6rem !important;
+                    font-size: 2.6rem;
                 }
 
                 p {
-                    font-size: 1.8rem !important;
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -368,15 +436,15 @@ $main-color: #69510F;
         .containerOne {
             .containerInsideOne {
                 img {
-                    height: 250px !important;
+                    height: 250px;
                 }
 
                 h1 {
-                    font-size: 3rem !important;
+                    font-size: 3rem;
                 }
 
                 p {
-                    font-size: 2.2rem !important;
+                    font-size: 2.2rem;
                 }
             }
         }
@@ -384,15 +452,15 @@ $main-color: #69510F;
         .containerTwo {
             .containerInsideTwo {
                 img {
-                    height: 250px !important;
+                    height: 250px;
                 }
 
                 h1 {
-                    font-size: 3rem !important;
+                    font-size: 3rem;
                 }
 
                 p {
-                    font-size: 2.2rem !important;
+                    font-size: 2.2rem;
                 }
             }
         }
@@ -409,7 +477,7 @@ $main-color: #69510F;
 
 // orientation: landscape
 
-@media screen and (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 0) and (max-width: 1200px) and (orientation: landscape) {
     .thirdPage {
         height: 125vh;
         .containerOne{
@@ -452,28 +520,45 @@ $main-color: #69510F;
 
 // orientation: landscape 700px
 
-@media screen and (min-width: 700px) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 700px) and (max-width: 1200px) and (orientation: landscape) {
     .thirdPage {
+        height: 125vh;
         .containerOne{
             .containerInsideOne {
+                img {
+                    height: 15%;
+                    width: 15%;
+                }
+
                 h1 {
                     font-size: 0.8rem;
+                    font-weight: 400;
                 }
 
                 p {
-                    font-size: 0.55rem;
+                    font-size: 0.5rem;
+                    width: 50%;
+                    transform: translateX(50%);
                 }
             }
         }
 
         .containerTwo{
             .containerInsideTwo {
+                img {
+                    height: 15%;
+                    width: 15%;
+                }
+
                 h1 {
                     font-size: 0.8rem;
+                    font-weight: 400;
                 }
 
                 p {
-                    font-size: 0.55rem;
+                    font-size: 0.5rem;
+                    width: 50%;
+                    transform: translateX(50%);
                 }
             }
         }
@@ -483,28 +568,40 @@ $main-color: #69510F;
 
 // orientation: landscape 1000px
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 1000px) and (max-width: 1200px) and (orientation: landscape) {
     .thirdPage {
         .containerOne{
             .containerInsideOne {
+                img {
+                    height: 13%;
+                    width: 13%;
+                }
+
                 h1 {
                     font-size: 1rem;
+                    padding: 2.5%;
                 }
 
                 p {
-                    font-size: 0.7rem;
+                    font-size: 0.6rem;
                 }
             }
         }
 
         .containerTwo{
             .containerInsideTwo {
+                img {
+                    height: 13%;
+                    width: 13%;
+                }
+
                 h1 {
                     font-size: 1rem;
+                    padding: 2.5%;
                 }
 
                 p {
-                    font-size: 0.7rem;
+                    font-size: 0.6rem;
                 }
             }
         }
