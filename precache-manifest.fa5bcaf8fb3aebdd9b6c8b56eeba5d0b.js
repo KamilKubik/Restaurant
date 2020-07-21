@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0a35c9569e8d61eb049b6e56b1daab7",
+    "revision": "41dfdeb374abc65411fbc83c44b8a999",
     "url": "/Restaurant/index.html"
   },
   {
-    "revision": "a864d0ca34c81cde47cf",
-    "url": "/Restaurant/static/css/main.b672c17f.chunk.css"
+    "revision": "64ca9fa88c778c2f357d",
+    "url": "/Restaurant/static/css/main.c80ca6b2.chunk.css"
   },
   {
-    "revision": "ab23f7368ed5547ec4f1",
-    "url": "/Restaurant/static/js/2.b7ab44d9.chunk.js"
+    "revision": "1a32b3244aaf17155b4e",
+    "url": "/Restaurant/static/js/2.886213de.chunk.js"
   },
   {
-    "revision": "091090b0b596633249afe761b44ebeb1",
-    "url": "/Restaurant/static/js/2.b7ab44d9.chunk.js.LICENSE.txt"
+    "revision": "bd7ad51b89d999a57157cb4755350adf",
+    "url": "/Restaurant/static/js/2.886213de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a864d0ca34c81cde47cf",
-    "url": "/Restaurant/static/js/main.6661ef48.chunk.js"
+    "revision": "64ca9fa88c778c2f357d",
+    "url": "/Restaurant/static/js/main.ed5a565d.chunk.js"
   },
   {
     "revision": "01767b6aab63e444ed85",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0a2d982f9aafab415d005d129c08cf2d",
     "url": "/Restaurant/static/media/arrowRightSvg.0a2d982f.svg"
+  },
+  {
+    "revision": "6e284cd2a9c0d5e59d12db1b54838a31",
+    "url": "/Restaurant/static/media/bigger10.6e284cd2.svg"
   },
   {
     "revision": "b2a9274fe56dafac83f930549f4ab451",
@@ -54,10 +58,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "24c5b254826728b3a260e4a507b23ca9",
     "url": "/Restaurant/static/media/gallery1.24c5b254.svg"
-  },
-  {
-    "revision": "1a2a2d6fc6657db996127a2c0da835e1",
-    "url": "/Restaurant/static/media/gallery10.1a2a2d6f.svg"
   },
   {
     "revision": "d4d18ba1868daaa6890a62567e31ddb8",
@@ -136,8 +136,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Restaurant/static/media/kitchen-brown.4a2a98b1.png"
   },
   {
-    "revision": "eb769fffe1b5e39478490bb00f32f054",
-    "url": "/Restaurant/static/media/mainCourseSvgOff.eb769fff.svg"
+    "revision": "0cfa5b2e0c2687afabce26fde0e251ee",
+    "url": "/Restaurant/static/media/mainCourseTwoSvg.0cfa5b2e.svg"
   },
   {
     "revision": "b4ad3d07f2980385f9ed1a006e01a5d1",
