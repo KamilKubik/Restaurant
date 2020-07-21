@@ -2,7 +2,7 @@
   "name": "react-rotuer-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kamilkubik.github.io/Restaurant/",
+  "homepage": "https://KamilKubik.github.io/Restaurant",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
