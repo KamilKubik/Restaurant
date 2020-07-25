@@ -18,8 +18,8 @@ const GalleryPage = () => {
                     <Link to='/'><img className='arrowBack' src={arrowBack}></img></Link>
                 </div>
                 <div className='centerContainer'>
-                    <h2>This is simple</h2>
-                    <h1>OUR GALLERY</h1>
+                    <h2>To bardzo proste</h2>
+                    <h1>NASZA GALERIA</h1>
                 </div>
             </div>
 

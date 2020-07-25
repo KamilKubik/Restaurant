@@ -9,15 +9,15 @@ const ThirdPage = () => {
             <div className='containerOne'>
                 <div className='containerInsideOne'>
                     <img src={fineDiningPhoto} alt='Fine Dining'></img>
-                    <h1>FINE DINING</h1>
-                    <p>Veniam est eiusmod velit pariatur est. Fugiat reprehenderit sint fugiat Lorem. Fugiat non laboris proident deserunt proident consequat et in aliqua nostrud ut ad. Duis minim consequat deserunt officia nisi labore ex sint pariatur. Consequat dolore culpa duis non est aliquip proident Lorem aliqua esse minim.</p>
+                    <h1>DOBRE JEDZENIE</h1>
+                    <p>Nasze potrawy przygotowywane są przez najlepszych kucharzy z Europy. Posiadają oni wieloletnie doświadczenie w przyrządzaniu potraw z dbałością o najmniejsze szczegóły. Oferujemy Państwu sezonowe potrawy ze swieżych składników, które każdego dnia odwiedzają naszą kuchnie.</p>
                 </div>
             </div>
             <div className='containerTwo'>
                 <div className='containerInsideTwo'>
                     <img src={exquisiteBar} alt='Exquisite Bar'></img>
-                    <h1>EXQUISITE BAR</h1>
-                    <p>Veniam est eiusmod velit pariatur est. Fugiat reprehenderit sint fugiat Lorem. Fugiat non laboris proident deserunt proident consequat et in aliqua nostrud ut ad. Duis minim consequat deserunt officia nisi labore ex sint pariatur. Consequat dolore culpa duis non est aliquip proident Lorem aliqua esse minim.</p>
+                    <h1>EKSKLUZYWNY BAR</h1>
+                    <p>W ofercie naszej restauracji znajduje się także bar, którego wnętrze urządzone zostało przy pomocy wyspecjalizowanych, europejskich projektantów. Nasi barmani to prawdziwi pasjonaci swojego zawodu, dlatego zachęcamy do zapoznania się z ich autorskimi koktajlami, które znajdują się w naszym menu.</p>
                 </div>
             </div>
             <div className='barOne'></div>

@@ -5,14 +5,14 @@ const ContactPage = () => {
         <div className='contactPage' id='contact'>
             <div className='contactBox'>
                 <h2 className='contactTitle'>
-                    Nerunhaus Restaurant & Coctail Bar, 71 Wilcza
+                    Restauracja Nerunhaus & Bar Koktajlowy, 71 Wilcza
                     <br></br>
                     <br></br>
-                    Warsaw, 00-061,
+                    Warszawa, 00-061,
                     nerunhaus@onet.pl
                     <br></br>
                     <br></br>
-                    Open: 09:00 am – 01:00 pm
+                    Otwarte w każdy dzień od 8 do 23
                 </h2>
             </div>
             <div className='mediaBox'>

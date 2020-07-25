@@ -4,8 +4,8 @@ import ArrowDownTwo from './ArrowDownTwo';
 const SecondPage = () => {
     return (
         <div className='secondPage' id='about'>
-            <h2 className='secondPageText'>Welcome to our restaurant, feel free to discover our history and taste our specialties</h2>
-            <h2 className='secondPageTextTwo'>Cooking is our passion, which is why we do it with attention to the smallest details.</h2>
+            <h2 className='secondPageText'>Witaj w naszej restauracji! Nie zwlekaj i odkryj pełnię smaku naszych autorskich potraw!</h2>
+            <h2 className='secondPageTextTwo'>Gotowanie to nasza pasja, którą wykonujemy z dbałością o najmniejsze szczegóły</h2>
             <ArrowDownTwo></ArrowDownTwo>
         </div>
     )

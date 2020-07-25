@@ -30,6 +30,7 @@ $main-color: #69510F;
                 font-family: 'Rokkitt', serif;
                 font-weight: 400;
                 text-align: center;
+                letter-spacing: 1px;
             }
     
             .galleryTitle {
@@ -39,6 +40,7 @@ $main-color: #69510F;
                 font-family: 'Rokkitt', serif;
                 font-weight: 400;
                 text-align: center;
+                letter-spacing: 2px;
             }
         }
     }
@@ -143,7 +145,7 @@ $main-color: #69510F;
     }
 
     .arrowDownSix {
-        height: 28px;
+        height: 22px;
         position: absolute;
         bottom: 0%;
         left: 50%;

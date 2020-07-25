@@ -27,8 +27,8 @@ const SixPageTwo = () => {
         <div className='sixPageTwo' id='menu'>
             <div className='menuTitleContainer'>
                 <div className='menuWrapper'>
-                    <h2 className='menuSubtitle'>Special selection</h2>
-                    <h1 className='menuTitle'>FROM OUR MENU</h1>
+                    <h2 className='menuSubtitle'>Specjalna selekcja</h2>
+                    <h1 className='menuTitle'>Z NASZEGO MENU</h1>
                 </div>
             </div>
             <div className='menuContainer'>
@@ -45,7 +45,7 @@ const SixPageTwo = () => {
                 }) : null}
             </div>
             <div className='viewAllContainer'>
-                <Link to='/menu'><button className='viewAllButton'>VIEW ALL</button></Link>
+                <Link to='/menu'><button className='viewAllButton'>CAŁE MENU</button></Link>
             </div>
             <div className='menuArrowDown'>
                 <ArrowDownFive></ArrowDownFive>

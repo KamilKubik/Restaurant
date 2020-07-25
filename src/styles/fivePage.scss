@@ -37,7 +37,7 @@ $main-color: #69510F;
                 position: absolute;
                 color: whitesmoke;
                 text-align: center;
-                font-size: 0.8rem;
+                font-size: 1rem;
                 letter-spacing: 3px;
                 left: 50%;
                 top: 50%;
@@ -204,6 +204,52 @@ $main-color: #69510F;
 
 //                                                            600px
 
+@media (max-width: 600px) and (min-height: 0px) and (orientation: portrait) {
+    .fivePage {
+        .review {
+            .boxBefore {
+                height: 25% !important;
+            } 
+    
+            .opinionBox {
+                height: 25% !important;
+            }
+        }
+    }
+}
+
+//                                                            600px
+
+@media (max-width: 600px) and (min-height: 600px) and (orientation: portrait) {
+    .fivePage {
+        .review {
+            .boxBefore {
+                height: 30% !important;
+            } 
+    
+            .opinionBox {
+                height: 20% !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) and (min-height: 700px) and (orientation: portrait) {
+    .fivePage {
+        .review {
+            .boxBefore {
+                height: 35% !important;
+            } 
+    
+            .opinionBox {
+                height: 15% !important;
+            }
+        }
+    }
+}
+
+//                                                            600px
+
 @media (min-width: 600px) and (orientation: portrait) {
     .fivePage {
         grid-template-rows: 40% 60%;
@@ -217,7 +263,7 @@ $main-color: #69510F;
                 height: 10% !important;
     
                 .title{
-                    font-size: 1.1rem !important;
+                    font-size: 1.4rem !important;
                 }
             }
     
@@ -334,14 +380,14 @@ $main-color: #69510F;
     }
 }
 
-//                                                            800px
+//                                                            1000px
 
 @media (min-width: 1000px) and (orientation: portrait) {
     .fivePage {
         .review {
             .titleBox {
                 .title{
-                    font-size: 2rem !important;
+                    font-size: 1.8rem !important;
                 }
             }
     
@@ -424,7 +470,7 @@ $main-color: #69510F;
             }
     
             .opinionBox {
-                height: 25% !important;
+                height: 20% !important;
 
                 .opinion {
                     font-size: 1rem !important;
@@ -441,7 +487,7 @@ $main-color: #69510F;
             }
 
             .boxAfter {
-                height: 15% !important;
+                height: 20% !important;
             }
     
             .arrowRightBox {
@@ -489,6 +535,14 @@ $main-color: #69510F;
                     .dot:hover {
                         background-color: $main-color;
                     }
+
+                    .dotActive {
+                        background-color: $main-color;
+                    }
+
+                    .dotNonActive {
+                        background-color: unset;
+                    }
                 }
             }
     
@@ -505,72 +559,104 @@ $main-color: #69510F;
     }
 }
 
-//                                                                   2000px
-
-@media(min-width: 2000px) {
-    .fivePage {
-        .review {
-            .boxBefore {
-                height: 30% !important;
-            }
-
-            .opinionBox {
-                height: 15% !important;
-            }
-
-            .boxAfter {
-                height: 20% !important;
-            }
-        }
-    }
-}
-
 @media(min-width: 1600px) {
     .fivePage {
         .review {
             .titleBox {
                 .title {
-                    font-size: 2.4rem !important;
+                    font-size: 1.7rem !important;
                 }
             }
 
             .subtitleBox {
                 .subtitle {
-                    font-size: 1.6rem !important;
+                    font-size: 1.4rem !important;
                 }
             }
 
             .nameBox {
                 .name {
-                    font-size: 1.7rem !important;
+                    font-size: 1.4rem !important;
                 }
             }
 
             .commasBox {
                 .commas {
-                    font-size: 4.6rem !important;
+                    font-size: 4rem !important;
                 }
             }
 
             .opinionBox {
                 .opinion {
-                    font-size: 1.2rem !important;
+                    font-size: 1rem !important;
                 }
             }
 
                 
             .arrowBox {
                 .arrowDownFour {
-                    height: 52px !important;
+                    height: 42px !important;
                 }
             }
         }
     }
 }
 
-//                                                                   2200px
+@media(min-width: 1900px) {
+    .fivePage {
+        .review {
+            .boxBefore {
+                height: 30% !important;
+            }
 
-@media(min-width: 2200px) {
+            .titleBox {
+                .title {
+                    font-size: 2rem !important;
+                }
+
+                .title::After {
+                    height: 2px;
+                }
+            }
+
+            .subtitleBox {
+                .subtitle {
+                    font-size: 1.4rem !important;
+                }
+            }
+
+            .nameBox {
+                .name {
+                    font-size: 1.4rem !important;
+                }
+            }
+
+            .commasBox {
+                .commas {
+                    font-size: 4rem !important;
+                }
+            }
+
+            .opinionBox {
+                height: 15% !important;
+                .opinion {
+                    font-size: 1rem !important;
+                }
+            }
+
+                
+            .arrowBox {
+                .arrowDownFour {
+                    height: 42px !important;
+                }
+            }
+        }
+    }
+}
+
+//                                                                   2400px
+
+@media(min-width: 2400px) {
     .fivePage {
         .review {
             .titleBox {
@@ -600,64 +686,6 @@ $main-color: #69510F;
             .opinionBox {
                 .opinion {
                     font-size: 1.4rem !important;
-                }
-            }
-
-                
-            .arrowBox {
-                .arrowDownFour {
-                    height: 64px !important;
-                }
-            }
-        }
-    }
-}
-
-//                                                                   2600px
-
-@media(min-width: 2600px) {
-    .fivePage {
-        .review {
-            .titleBox {
-                .title {
-                    font-size: 3.2rem !important;
-                }
-
-                .title::after {
-                    height: 2px !important;
-                }
-            }
-
-            .subtitleBox {
-                .subtitle {
-                    font-size: 1.8rem !important;
-                }
-            }
-
-            .nameBox {
-                .name {
-                    font-size: 2rem !important;
-                }
-            }
-
-            .commasBox {
-                .commas {
-                    font-size: 5rem !important;
-                }
-            }
-
-            .opinionBox {
-                .opinion {
-                    font-size: 1.6rem !important;
-                }
-            }
-
-            .dotsContainer {
-                .dotContainer {
-                    .dot {
-                        height: 20px !important;
-                        width: 20px !important;
-                    }
                 }
             }
 
